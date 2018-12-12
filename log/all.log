@@ -1,0 +1,312 @@
+2018-12-12 13:03:04 - infoLogger - Test.py - main - 87 - total slices=83887 disk count=60 total storage=41943.04GB disk size=750GB
+2018-12-12 13:03:04 - infoLogger - Test.py - main - 96 - Events output to: /root/PR-Sim/log/event-20181212.13.03.04
+2018-12-12 13:04:19 - infoLogger - Configuration.py - printAll - 222 - Configuration:	 total_time: 87600, chunks per disk: 3000, chunks per machine: 15000, n: 2k: 1, lazy recovery: True, recovery threshold: 7, recovery bandwidth cap: 25000000, installment size: 1000, lazy only available: True, availablity counts for recovery: True, num chunks diff racks: 1, chunk size: 256MB, total_active_storage: 0.02, rack count: 3, disks per machine: 5, bandwidth efficient reconstruction: False, machines per rack: 4, datacenters:1, event file:/root/PR-Sim/log/event-20181212.13.03.04, tiered storage:False, heterogeneous redundancy:False, heterogeneous each layer:False, redundances:(RS_2_1), rafi recovery:True, availability_counts_for_recovery:True
+
+2018-12-12 13:06:07 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 479 - time: 20663.0013842 slice:38281 durCount:1 latDefect:True due to latent error and disk 19
+2018-12-12 13:06:07 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 479 - time: 20663.0013842 slice:32928 durCount:1 latDefect:True due to latent error and disk 20
+2018-12-12 13:06:20 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 479 - time: 23424.9627714 slice:58266 durCount:1 latDefect:True due to latent error and disk 25
+2018-12-12 13:06:20 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 479 - time: 23424.9627714 slice:76410 durCount:1 latDefect:True due to latent error and disk 25
+2018-12-12 13:06:20 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 479 - time: 23424.9627714 slice:8441 durCount:1 latDefect:True due to latent error and disk 28
+2018-12-12 13:06:50 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 479 - time: 30986.2620161 slice:7269 durCount:1 latDefect:True due to latent error and disk 66
+2018-12-12 13:07:05 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 479 - time: 35053.2089921 slice:21608 durCount:1 latDefect:True due to latent error and disk 13
+2018-12-12 13:07:54 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 479 - time: 51504.8823363 slice:72644 durCount:1 latDefect:True due to latent error and disk 19
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 479 - time: 54048.7112224 slice:13828 durCount:1 latDefect:True due to latent error and disk 61
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 479 - time: 54048.7112224 slice:26585 durCount:1 latDefect:True due to latent error and disk 61
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:617 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:750 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:4050 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:6179 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:7345 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:9113 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:9145 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:11868 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:12117 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:12969 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:13247 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:13487 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:14209 durCount:0 latDefect:False due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:14514 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:15558 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:17230 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:17618 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:19521 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:19930 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:21374 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:22267 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:24125 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:28405 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:29288 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:35011 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:36868 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:37546 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:39706 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:40831 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:46474 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:47541 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:48775 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:48821 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:52451 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:55513 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:55734 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:55935 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:56586 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:57959 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:58572 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:62058 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:62455 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:62493 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:63992 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:66823 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:70507 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:73061 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:75104 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:76307 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:76818 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:77783 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:77884 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:78321 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:78635 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:80890 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:01 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 54310.3588087 slice:82891 durCount:0 latDefect:None due to disk 43
+2018-12-12 13:08:10 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 479 - time: 58608.8157538 slice:36193 durCount:1 latDefect:True due to latent error and disk 44
+2018-12-12 13:08:28 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 479 - time: 69342.6092001 slice:7128 durCount:1 latDefect:True due to latent error and disk 72
+2018-12-12 13:08:28 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 479 - time: 69342.6092001 slice:56442 durCount:1 latDefect:True due to latent error and disk 72
+2018-12-12 13:08:28 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 479 - time: 69342.6092001 slice:1237 durCount:1 latDefect:True due to latent error and disk 74
+2018-12-12 13:08:29 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 479 - time: 70230.7381892 slice:64378 durCount:1 latDefect:True due to latent error and disk 68
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:134 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:420 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:463 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:682 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:875 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:945 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:1016 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:1202 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:1358 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:1517 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:2143 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:2213 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:2715 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:2748 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:2829 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:3012 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:3216 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:3544 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:4686 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:5987 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:6567 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:7368 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:7785 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:8794 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:9437 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:9703 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:9897 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:10100 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:11411 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:11822 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:12902 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:12946 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:14473 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:15084 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:15275 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:15455 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:15647 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:16743 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:16751 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:16907 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:17329 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:17385 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:17422 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:17603 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:17657 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:18617 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:19041 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:19082 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:19354 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:19584 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:19931 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:20042 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:21597 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:22777 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:22784 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:23359 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:23763 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:23811 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:24132 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:24234 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:24313 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:24969 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:25277 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:25499 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:25650 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:25804 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:25990 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:27779 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:28329 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:28748 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:29024 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:29416 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:29468 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:29603 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:29795 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:30135 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:30585 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:30981 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:31526 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:31588 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:32266 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:33991 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:34846 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:36030 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:36351 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:36763 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:36896 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:37390 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:37660 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:37817 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:38089 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:38098 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:38280 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:38314 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:38748 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:39278 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:39347 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:39952 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:40326 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:40462 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:40792 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:41296 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:42140 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:42343 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:42628 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:42819 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:43059 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:43911 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:44519 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:44611 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:44700 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:45061 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:45959 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:46006 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:46362 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:46535 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:46703 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:47102 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:48115 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:48466 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:48893 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:48969 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:48987 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:48993 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:49550 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:50257 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:51887 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:52268 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:52652 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:53941 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:54429 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:54500 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:54930 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:54936 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:55308 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:55613 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:56570 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:56703 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:57202 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:57460 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:57732 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:57953 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:58154 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:58489 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:58717 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:59366 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:59865 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:61907 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:62079 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:62989 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:63129 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:63839 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:64398 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:64430 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:64682 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:64698 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:64716 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:66323 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:66629 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:66632 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:67181 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:67286 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:67426 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:67574 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:68282 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:68925 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:70077 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:70185 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:70718 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:71168 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:71179 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:71385 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:72062 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:74143 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:74157 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:74229 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:74596 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:75693 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:76925 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:77478 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:77506 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:77719 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:78291 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:78413 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:78579 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:79973 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:80050 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:80307 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:80471 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:81368 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:82178 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:30 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 468 - time: 70377.2267474 slice:83813 durCount:0 latDefect:None due to disk 16
+2018-12-12 13:08:39 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 479 - time: 81035.8325953 slice:60515 durCount:1 latDefect:True due to latent error and disk 40
+2018-12-12 13:08:39 - infoLogger - RandomDistributeEventHandler.py - handleFailure - 479 - time: 81475.8998294 slice:82212 durCount:1 latDefect:True due to latent error and disk 26
+2018-12-12 13:08:42 - infoLogger - RandomDistributeEventHandler.py - end - 328 - anomalous available count: 0, total latent failure: 550,             total scrubs: 17045, total scrubs repairs: 525,              total disk failures:68, total disk repairs:68,              total machine failures:378, total machine repairs:378,              total permanent machine failures:11,              total short temperary machine failures:114,              total long temperary machine failures:253,              total machine failures due to rack failures:28,              total eager machine repairs:0, total eager slice repairs:0,              total skipped latent:45, total incomplete recovery:0
+              max recovery bandwidth:60844.928432
+              durability:99.684099%
+2018-12-12 13:08:43 - infoLogger - RandomDistributeEventHandler.py - printDegradedStat - 292 - Avg_durable_degraded__per_24h_slices 395 stdev:1683.535770 max:14238
+2018-12-12 13:08:43 - infoLogger - RandomDistributeEventHandler.py - printPerYearStart - 219 - Avg_durable_degraded_ 1 47
+2018-12-12 13:08:43 - infoLogger - RandomDistributeEventHandler.py - printPerYearStart - 219 - Avg_durable_degraded_ 2 323
+2018-12-12 13:08:43 - infoLogger - RandomDistributeEventHandler.py - printPerYearStart - 219 - Avg_durable_degraded_ 3 753
+2018-12-12 13:08:43 - infoLogger - RandomDistributeEventHandler.py - printPerYearStart - 219 - Avg_durable_degraded_ 4 209
+2018-12-12 13:08:43 - infoLogger - RandomDistributeEventHandler.py - printPerYearStart - 219 - Avg_durable_degraded_ 5 85
+2018-12-12 13:08:43 - infoLogger - RandomDistributeEventHandler.py - printPerYearStart - 219 - Avg_durable_degraded_ 6 253
+2018-12-12 13:08:43 - infoLogger - RandomDistributeEventHandler.py - printPerYearStart - 219 - Avg_durable_degraded_ 7 256
+2018-12-12 13:08:43 - infoLogger - RandomDistributeEventHandler.py - printPerYearStart - 219 - Avg_durable_degraded_ 8 675
+2018-12-12 13:08:43 - infoLogger - RandomDistributeEventHandler.py - printPerYearStart - 219 - Avg_durable_degraded_ 9 640
+2018-12-12 13:08:43 - infoLogger - RandomDistributeEventHandler.py - printPerYearStart - 219 - Avg_durable_degraded_ 10 709
+2018-12-12 13:08:43 - infoLogger - RandomDistributeEventHandler.py - printPerYearStart - 222 - Avg_durable_degraded_ 10 0
+2018-12-12 13:08:45 - infoLogger - RandomDistributeEventHandler.py - printDegradedStat - 292 - Avg_available_degraded__per_24h_slices 0 stdev:0.000000 max:0
+2018-12-12 13:08:45 - infoLogger - RandomDistributeEventHandler.py - printPerYearStart - 219 - Avg_available_degraded_ 1 0
+2018-12-12 13:08:45 - infoLogger - RandomDistributeEventHandler.py - printPerYearStart - 219 - Avg_available_degraded_ 2 0
+2018-12-12 13:08:45 - infoLogger - RandomDistributeEventHandler.py - printPerYearStart - 219 - Avg_available_degraded_ 3 0
+2018-12-12 13:08:45 - infoLogger - RandomDistributeEventHandler.py - printPerYearStart - 219 - Avg_available_degraded_ 4 0
+2018-12-12 13:08:45 - infoLogger - RandomDistributeEventHandler.py - printPerYearStart - 219 - Avg_available_degraded_ 5 0
+2018-12-12 13:08:45 - infoLogger - RandomDistributeEventHandler.py - printPerYearStart - 219 - Avg_available_degraded_ 6 0
+2018-12-12 13:08:45 - infoLogger - RandomDistributeEventHandler.py - printPerYearStart - 219 - Avg_available_degraded_ 7 0
+2018-12-12 13:08:45 - infoLogger - RandomDistributeEventHandler.py - printPerYearStart - 219 - Avg_available_degraded_ 8 0
+2018-12-12 13:08:45 - infoLogger - RandomDistributeEventHandler.py - printPerYearStart - 219 - Avg_available_degraded_ 9 0
+2018-12-12 13:08:45 - infoLogger - RandomDistributeEventHandler.py - printPerYearStart - 219 - Avg_available_degraded_ 10 0
+2018-12-12 13:08:45 - infoLogger - RandomDistributeEventHandler.py - printPerYearStart - 222 - Avg_available_degraded_ 10 0
+2018-12-12 13:08:47 - infoLogger - RandomDistributeEventHandler.py - printDegradedStat - 292 - Avg_banwidth__per_24h_GBPerday 13 stdev:75.229159 max:1426
+2018-12-12 13:08:47 - infoLogger - RandomDistributeEventHandler.py - printPerYearStart - 219 - Avg_banwidth_ 1 1.95499011917
+2018-12-12 13:08:47 - infoLogger - RandomDistributeEventHandler.py - printPerYearStart - 219 - Avg_banwidth_ 2 11.4387853363
+2018-12-12 13:08:47 - infoLogger - RandomDistributeEventHandler.py - printPerYearStart - 219 - Avg_banwidth_ 3 30.8865017309
+2018-12-12 13:08:47 - infoLogger - RandomDistributeEventHandler.py - printPerYearStart - 219 - Avg_banwidth_ 4 10.1614442022
+2018-12-12 13:08:47 - infoLogger - RandomDistributeEventHandler.py - printPerYearStart - 219 - Avg_banwidth_ 5 3.06770775723
+2018-12-12 13:08:47 - infoLogger - RandomDistributeEventHandler.py - printPerYearStart - 219 - Avg_banwidth_ 6 9.70723548804
+2018-12-12 13:08:47 - infoLogger - RandomDistributeEventHandler.py - printPerYearStart - 219 - Avg_banwidth_ 7 5.85060079357
+2018-12-12 13:08:47 - infoLogger - RandomDistributeEventHandler.py - printPerYearStart - 219 - Avg_banwidth_ 8 28.8618469041
+2018-12-12 13:08:47 - infoLogger - RandomDistributeEventHandler.py - printPerYearStart - 219 - Avg_banwidth_ 9 13.0763496349
+2018-12-12 13:08:47 - infoLogger - RandomDistributeEventHandler.py - printPerYearStart - 219 - Avg_banwidth_ 10 15.4375459074
+2018-12-12 13:08:47 - infoLogger - RandomDistributeEventHandler.py - printPerYearStart - 222 - Avg_banwidth_ 10 0
+2018-12-12 13:08:47 - infoLogger - Test.py - main - 148 - unavailable=1654  undurable=265
+2018-12-12 13:08:47 - infoLogger - Test.py - main - 149 - Events handled: 35535
+2018-12-12 13:08:47 - infoLogger - Test.py - main - 155 - avg unavailable = 1654.00000
+2018-12-12 13:08:47 - infoLogger - Test.py - main - 157 - avg undurable = 265.00000
