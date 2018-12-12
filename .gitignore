@@ -1,0 +1,9 @@
+*.py[co]
+*.sw?
+doc/build/*
+build
+*.egg
+*.egg-info
+.eggs/*
+
+.testrepository/*
