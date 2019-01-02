@@ -38,6 +38,8 @@ class RandomDistributeEventHandler(EventHandler):
         # how to express Long.MAX_VALUE in python?
         self.min_av_count = 10000000000
 
+        self.end_time = self.conf.total_time
+
         # A slice is recovered when recoveryThreshold number of chunks are
         # 'lost', where 'lost' can include durability events (disk failure,
         # latent failure), as well as availability events (temporary machine
@@ -115,6 +117,64 @@ class RandomDistributeEventHandler(EventHandler):
         self.total_incomplete_recovery_attempts = 0
 
         self.slice_locations = []
+        self.slices_degraded_list = []
+        self.slices_degraded_avail_list = []
+
+        # unavailable statistic dict, {slice_index:[[start, end],...]}
+        self.unavailable_durations = {}
+        # degraded slice statistic dict
+        self.slices_degraded_durations = {}
+
+        self.cccccccccccccc = 0
+
+    # After end, init the parameters again for next iteration.
+    def _init(self):
+        self.availability_counts_for_recovery = \
+            self.conf.availability_counts_for_recovery
+
+        total_slices = len(self.durable_count)
+        for i in xrange(total_slices):
+            self.available_count[i] = self.n
+            self.durable_count[i] = self.n
+            self.latent_defect[i] = None
+            self.known_latent_defect[i] = None
+
+        self.unavailable_slice_count = 0
+        self.undurable_slice_count = 0
+
+        self.anomalous_available_count = 0
+
+        self.current_slice_degraded = 0
+        self.current_avail_slice_degraded = 0
+
+        self.recovery_bandwidth_cap = self.conf.recovery_bandwidth_gap
+        # instantaneous total recovery b/w, in MB/hr, not to exceed above cap
+        self.current_recovery_bandwidth = 0
+        # max instantaneous recovery b/w, in MB/hr
+        self.max_recovery_bandwidth = 0
+
+        # current counter of years to print histogram
+        self.snapshot_year = 1
+
+        self.max_bw = 0
+        self.bandwidth_list = OrderedDict()
+
+        self.total_latent_failures = 0
+        self.total_scrubs = 0
+        self.total_scrub_repairs = 0
+        self.total_disk_failures = 0
+        self.total_disk_repairs = 0
+        self.total_machine_failures = 0
+        self.total_machine_repairs = 0
+        self.total_perm_machine_failures = 0
+        self.total_short_temp_machine_failures = 0
+        self.total_long_temp_machine_failures = 0
+        self.total_machine_failures_due_to_rack_failures = 0
+        self.total_eager_machine_repairs = 0
+        self.total_eager_slice_repairs = 0
+        self.total_skipped_latent = 0
+        self.total_incomplete_recovery_attempts = 0
+
         self.slices_degraded_list = []
         self.slices_degraded_avail_list = []
 
@@ -207,6 +267,34 @@ class RandomDistributeEventHandler(EventHandler):
         unavailable = self.n - self.available_count[slice_index]
         if undurable == 0 and unavailable == 0:
             self.current_avail_slice_degraded += 1
+
+    # a slice start Unavailable
+    def startUnavailable(self, slice_index, ts):
+        slice_unavail_durations = self.unavailable_durations.pop(slice_index, [])
+        if slice_unavail_durations == []:
+            slice_unavail_durations.append([ts, None])
+        else:
+            if slice_unavail_durations[-1][1] is None:
+                pass
+            else:
+                slice_unavail_durations.append([ts, None])
+        self.unavailable_durations[slice_index] = slice_unavail_durations
+
+    # a slice end Unavailable, the slice undurable or become available
+    def endUnavailable(self, slice_index, ts):
+        slice_unavail_durations = self.unavailable_durations.pop(slice_index, [])
+        if slice_unavail_durations == []:
+            slice_unavail_durations.append([ts, self.end_time])
+        else:
+            if (self.durable_count[slice_index] < self.k) or \
+               (self.durable_count[slice_index] == self.k and self.latent_defect[slice_index]):
+                if slice_unavail_durations[-1][1] is None:
+                    slice_unavail_durations[-1][1] = self.end_time
+                else:
+                    slice_unavail_durations.append([ts, self.end_time])
+            else:
+                slice_unavail_durations[-1][1] = ts
+        self.unavailable_durations[slice_index] = slice_unavail_durations
 
     def printPerYearStart(self, per_day_start, description):
         d = 0
@@ -310,6 +398,7 @@ class RandomDistributeEventHandler(EventHandler):
              total eager machine repairs:%d, total eager slice repairs:%d, \
              total skipped latent:%d, total incomplete recovery:%d\n \
              max recovery bandwidth:%f\n \
+             unavailable_slice_count:%d, undurable_slice_count:%d\n \
              durability:%f%%" %
             (self.anomalous_available_count, self.total_latent_failures,
              self.total_scrubs, self.total_scrub_repairs,
@@ -324,6 +413,8 @@ class RandomDistributeEventHandler(EventHandler):
              self.total_skipped_latent,
              self.total_incomplete_recovery_attempts,
              self.max_recovery_bandwidth,
+             self.unavailable_slice_count,
+             self.undurable_slice_count,
              (1 - float(self.undurable_slice_count) /
               len(self.available_count))*100.0))
 
@@ -353,6 +444,8 @@ class RandomDistributeEventHandler(EventHandler):
             self.handleEagerRecoveryInstallment(e.getUnit(), e.getTime(), e)
         elif e.getType() == Event.EventType.LatentDefect:
             self.handleLatentDefect(e.getUnit(), e.getTime(), e)
+        elif e.getType() == Event.EventType.LatentRecovered:
+            self.handleLatentRecovered(e.getUnit(), e.getTime(), e)
         elif e.getType() == Event.EventType.ScrubStart:
             self.handleScrubStart(e.getUnit(), e.getTime(), e)
         elif e.getType() == Event.EventType.ScrubComplete:
@@ -426,6 +519,7 @@ class RandomDistributeEventHandler(EventHandler):
                         self._my_assert(self.available_count[slice_index] >= 0)
                         if self.available_count[slice_index] < self.k:
                             self.unavailable_slice_count += 1
+                            self.startUnavailable(slice_index, time)
 
                 self.slices_degraded_avail_list.append(
                     (e.getTime(), self.current_avail_slice_degraded))
@@ -468,6 +562,7 @@ class RandomDistributeEventHandler(EventHandler):
                         " due to disk " + str(u.getID()))
                     self.durable_count[slice_index] = self.lost_slice
                     self.undurable_slice_count += 1
+                    self.endUnavailable(slice_index, time)
                     continue
 
                 if self.durable_count[slice_index] == self.k and \
@@ -479,6 +574,7 @@ class RandomDistributeEventHandler(EventHandler):
                         + " due to latent error and disk " + str(u.getID()))
                     self.durable_count[slice_index] = self.lost_slice
                     self.undurable_slice_count += 1
+                    self.endUnavailable(slice_index, time)
 
                 # is this slice one that needs recovering? if so, how much
                 # data to recover?
@@ -553,6 +649,8 @@ class RandomDistributeEventHandler(EventHandler):
                         # If they are not, then anomalousAvailableCount will
                         # be incremented
                         if self.available_count[slice_index] < self.n:
+                            if self.available_count[slice_index] + self.durable_count[slice_index] == self.n + self.k - 1:
+                                self.endUnavailable(slice_index, time)
                             self.available_count[slice_index] += 1
                             self.sliceRecoveredAvailability(slice_index)
                         elif e.info == 1:  # temp & short failure
@@ -617,12 +715,16 @@ class RandomDistributeEventHandler(EventHandler):
                             transfer_required += \
                                 self.computeReconstructionBandwidth(
                                     chunks_recovered)
+                            if self.durable_count[slice_index] + self.available_count[slice_index] >= self.n + self.k - chunks_recovered and self.durable_count[slice_index] + self.available_count[slice_index] <= self.n + self.k - 1:
+                                self.endUnavailable(slice_index, time)
                     else:
                         if (u.getMetadata().nonexistent_slices is not None) \
                            and (slice_index in
                                 u.getMetadata().nonexistent_slices):
                             u.getMetadata().nonexistent_slices.remove(
                                 slice_index)
+                            if self.durable_count[slice_index] + self.available_count[slice_index] == self.n + self.k - 1:
+                                self.endUnavailable(slice_index, time)
                             self.durable_count[slice_index] += 1
                             transfer_required += \
                                 self.computeReconstructionBandwidth(1)
@@ -685,7 +787,7 @@ class RandomDistributeEventHandler(EventHandler):
             slice_installment.setLastFailureTime(u.getLastFailureTime())
             slice_installment.setOriginalFailureTime(original_failure_time)
         except Exception, e:
-            # logging.error("Error in eager recovery: " + e)
+            error_logger.error("Error in eager recovery: " + e)
             return
 
         total_num_chunks_added_for_repair = 0
@@ -836,6 +938,8 @@ class RandomDistributeEventHandler(EventHandler):
                                 chunks_recovered)
                     else:
                         if self.available_count[slice_index] < self.n:
+                            if self.available_count[slice_index] + self.durable_count[slice_index] == self.n + self.k - 1:
+                                self.endUnavailable(slice_index, time)
                             self.available_count[slice_index] += 1
                             transfer_required += \
                                 self.computeReconstructionBandwidth(1)
@@ -898,6 +1002,7 @@ class RandomDistributeEventHandler(EventHandler):
                     "  due to ===latent=== error " + " on disk " +
                     str(u.getID()))
                 self.undurable_slice_count += 1
+                self.endUnavailable(slice_index, time)
                 self.durable_count[slice_index] = self.lost_slice
                 u.getMetadata().defective_slices.remove(slice_index)
         else:
@@ -907,6 +1012,36 @@ class RandomDistributeEventHandler(EventHandler):
             (e.getTime(), self.current_slice_degraded))
         self.slices_degraded_avail_list.append(
             (e.getTime(), self.current_avail_slice_degraded))
+
+    def handleLatentRecovered(self, u, time, e):
+        transfer_required = 0.0
+        if isinstance(u, Disk):
+            self.total_scrubs += 1
+            if u.getMetadata().defective_slices is None:
+                return
+            u.getMetadata().known_defective_slices = \
+                deepcopy(u.getMetadata().defective_slices)
+            for slice_index in u.getMetadata().known_defective_slices:
+                self.known_latent_defect[slice_index] = True
+            if u.getMetadata().known_defective_slices is None:
+                return
+            for slice_index in u.getMetadata().known_defective_slices:
+                self.total_scrub_repairs += 1
+                self.latent_defect[slice_index] = False
+                self.known_latent_defect[slice_index] = False
+                transfer_required += self.computeReconstructionBandwidth(1)
+                self.sliceRecovered(slice_index)
+
+            u.getMetadata().defective_slices = None
+            u.getMetadata().known_defective_slices = None
+        else:
+            raise Exception("Latent Recovered should only happen for disk")
+        self.slices_degraded_list.append(
+            (e.getTime(), self.current_slice_degraded))
+        self.slices_degraded_avail_list.append(
+            (e.getTime(), self.current_avail_slice_degraded))
+        self.addBandwidthStat(
+            Recovery(u.getLastScrubStart(), e.getTime(), transfer_required))
 
     def handleScrubStart(self, u, time, e):
         if isinstance(u, Disk):
@@ -963,7 +1098,6 @@ class RandomDistributeEventHandler(EventHandler):
                 self.durable_count[slice_index] += 1
                 disk.getMetadata().nonexistent_slices.remove(slice_index)
                 recovered += 1
-
         self._my_assert((not self.known_latent_defect[slice_index]) and
                         (self.durable_count[slice_index] == self.n))
 
@@ -996,6 +1130,7 @@ class RandomDistributeEventHandler(EventHandler):
                     self.distributeOneSliceToOneDisk(i, disks, tmp_racks,
                                                      False)
 
+            # print "tmp_racks:%d, rack_count:%d, n:%d" % (len(tmp_racks), Configuration.rack_count, self.n)
             self._my_assert(len(tmp_racks) == (Configuration.rack_count -
                                                self.n))
             self._my_assert(len(self.slice_locations[i]) == self.n)

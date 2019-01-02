@@ -1,7 +1,8 @@
 import sys
 import logging
 import logging.config
-from time import strftime
+import csv
+from time import strftime, time
 from math import ceil
 
 from simulator.utils.Log import info_logger, error_logger
@@ -13,6 +14,7 @@ from simulator.eventHandler.RandomDistributeEventHandler import \
 
 from simulator.utils.XMLParser import XMLParser
 from simulator.EventQueue import EventQueue
+from simulator.Event import Event
 from simulator.Result import Result
 
 conf = Configuration()
@@ -50,7 +52,8 @@ class Test(object):
 
         chunks_per_machine = disks_per_machine*conf.chunks_per_disk
         chunks_per_rack = machines_per_rack*chunks_per_machine
-        actual_storage_rack = chunks_per_rack*conf.chunk_size/1024.0  # in GB
+        # I think the rack can't be fulfilled, or Exception will be raised during distributeSlice.
+        actual_storage_rack = chunks_per_rack*conf.chunk_size/1024.0*5.0/6.0  # in GB
         print "actual_storage_rack:", actual_storage_rack
         if actual_storage_rack <= 0:
             raise Exception("too many slices generated, overflow!")
@@ -63,11 +66,11 @@ class Test(object):
         racks = int(ceil(total_storage_overheads/actual_storage_rack))
 
         # give the right rack count to Configuration
-        # Configuration.rack_count = racks
+        Configuration.rack_count = racks
 
         # small number just for test!!
-        Configuration.rack_count = 3
-        conf.num_chunks_diff_racks = 1
+        # Configuration.rack_count = 10
+        # conf.num_chunks_diff_racks = 1
 
         # One rack is a failure domain, make sure data spreading across racks
         # if racks <= conf.num_chunks_diff_racks*20/10:
@@ -94,39 +97,40 @@ class Test(object):
             ts = strftime("%Y%m%d.%H.%M.%S")
             conf.event_file += '-' + ts
             info_logger.info("Events output to: " + conf.event_file)
+            res_file = "/root/PR-Sim/log/durability-" + ts
+            info_logger.info("Durabilities output to: " + res_file)
 
+        undur_unavail = []
         iteration_count = int(sys.argv[1])
         for i in xrange(iteration_count):
+            xml = XMLParser(1)
+            self.units = xml.readFile()
+            root = self.units[0]
+            if Machine.fail_fraction != 0:
+                rate = self.getMachineFailureGeneratorRate(root)
+            if rate != -1 and rate != 0:
+                total_machines = conf.machines_per_rack * \
+                    Configuration.rack_count
+                all_machine_failure_per_hour = total_machines/rate
+                permanent_machines_per_hour = Machine.fail_fraction * \
+                    total_machines/(24*30)
+                Machine.fail_fraction = permanent_machines_per_hour / \
+                    all_machine_failure_per_hour
+
             layer_num = conf.returnLayerNum()
             for i in xrange(1, layer_num + 1):
-                xml = XMLParser(i)
-                self.units = xml.readFile()
-                root = self.units[0]
-                if Machine.fail_fraction != 0:
-                    rate = self.getMachineFailureGeneratorRate(root)
-                if rate != -1 and rate != 0:
-                    total_machines = conf.machines_per_rack * \
-                        Configuration.rack_count
-                    all_machine_failure_per_hour = total_machines/rate
-                    permanent_machines_per_hour = Machine.fail_fraction * \
-                        total_machines/(24*30)
-                    Machine.fail_fraction = permanent_machines_per_hour / \
-                        all_machine_failure_per_hour
-
-                # need to check all the disks are instance of
-                # DiskWithScrubbing?
                 # Yes, all disks are instance of DiskWithScrubbing.
                 events = EventQueue()
                 root.generateEvents(events, 0, conf.total_time, True)
 
                 if True:  # conf.event_file is not None:
                     events.printAll(conf.event_file,
-                                    "Iteration number:  " + str(i))
+                                    "Iteration number: " + str(i))
                 # else:
-                    conf.printAll()
-                    handler = RandomDistributeEventHandler()
-                    handler.start(root, total_slices, total_disks)
-                    error_logger.error("Starting simulation ")
+                conf.printAll()
+                handler = RandomDistributeEventHandler()
+                handler.start(root, total_slices, total_disks)
+                error_logger.error("Starting simulation ")
 
                     # print slices locations to file for debugging.
                     # with open("locations", "w") as fp:
@@ -138,17 +142,30 @@ class Test(object):
                     #         fp.write(msg)
 
                     # Event handling
+                e = events.removeFirst()
+                while e is not None:
+                    handler.handleEvent(e, events)
                     e = events.removeFirst()
-                    while e is not None:
-                        handler.handleEvent(e, events)
-                        e = events.removeFirst()
-                        events_handled += 1
+                    events_handled += 1
 
-                    result = handler.end()
-                    info_logger.info(result.toString())
-                    info_logger.info("Events handled: %d" % events_handled)
-                    un_available_count += Result.unavailable_count
-                    un_durable_count += Result.undurable_count
+                result = handler.end()
+                info_logger.info(result.toString())
+                info_logger.info("Events handled: %d" % events_handled)
+                un_available_count += Result.unavailable_count
+                un_durable_count += Result.undurable_count
+
+                # Record undurability and unavailability in csv files.
+                undurability = (float(handler.undurable_slice_count) /
+                                len(handler.available_count)) * 100
+                unavail_time = 0.0
+                unavailables = handler.unavailable_durations.keys()
+                print "number of unavailable slices:", len(unavailables)
+                for item in unavailables:
+                    for ts_duration in handler.unavailable_durations[item]:
+                        unavail_time += ts_duration[1] - ts_duration[0]
+                unavailability = (unavail_time/(conf.total_slices*conf.total_time)) * 100
+                print "unavailability:", unavailability
+                undur_unavail.append([undurability, unavailability])
 
         if True:  # conf.event_file is None:
             info_logger.info("avg unavailable = %.5f" %
@@ -156,7 +173,16 @@ class Test(object):
             info_logger.info("avg undurable = %.5f" %
                              (float(un_durable_count)/iteration_count))
 
+        with open(res_file, 'w') as fp:
+            writer = csv.writer(fp, lineterminator='\n')
+            for item in undur_unavail:
+                writer.writerow(item)
+
+
 
 if __name__ == "__main__":
+    st_time = time()
     t = Test()
     t.main()
+    end_time = time()
+    print "the execute time is %.2f minutes" % ((end_time - st_time)/60)

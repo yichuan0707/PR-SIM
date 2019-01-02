@@ -1,18 +1,31 @@
 import logging
 import logging.config
+from time import time, strftime
 
-logging.config.fileConfig(r"/root/PR-Sim/conf/log.conf")
 global info_logger
-info_logger = logging.getLogger("infoLogger")
-
 global error_logger
-error_logger = logging.getLogger("errorLogger")
+
+info_name = r"/root/PR-Sim/log/info-" + strftime("%Y%m%d.%H.%M.%S") + ".log"
+error_name = r"/root/PR-Sim/log/error-" + strftime("%Y%m%d.%H.%M.%S") + ".log"
+
+fmt = "%(asctime)s - %(name)s - %(filename)s - %(funcName)s - %(lineno)d - %(message)s"
+datefmt = "%Y-%m-%d %H:%M:%S"
+fmt_str = logging.Formatter(fmt, datefmt)
+
+info_logger = logging.getLogger('info')
+error_logger = logging.getLogger('error')
+info_logger.setLevel(logging.INFO)
+error_logger.setLevel(logging.INFO)
+info_handler = logging.FileHandler(info_name)
+error_handler = logging.FileHandler(error_name)
+info_handler.setLevel(logging.INFO)
+error_handler.setLevel(logging.INFO)
+info_handler.setFormatter(fmt_str)
+error_handler.setFormatter(fmt_str)
+
+info_logger.addHandler(info_handler)
+error_logger.addHandler(error_handler)
 
 
 if __name__ == "__main__":
-    # logging.config.fileConfig("D:\\nut cloud\\Codes\\PR-Sim\\conf\\log.conf")
-    # info_logger = logging.getLogger('infoLogger')
-    # info_logger.info("test")
-    # error_logger = logging.getLogger('errorLogger')
-    # error_logger.error("error")
     pass

@@ -19,8 +19,8 @@ class Machine(Unit):
         self.fail_timeout = -1
         if self.fail_timeout == -1:
             # Fraction of machine failures that are permanent.
-            Machine.fail_fraction = float(parameters.get("fail_fraction"))
-            self.fail_timeout = float(parameters.get("fail_timeout"))
+            Machine.fail_fraction = float(parameters.get("fail_fraction", 0.008))
+            self.fail_timeout = float(parameters.get("fail_timeout", 0.25))
             # If True, machine failure and recovery events will be generated
             # but ignored.
             self.fast_forward = bool(parameters.get("fast_forward"))

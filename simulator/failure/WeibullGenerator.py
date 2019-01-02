@@ -34,7 +34,8 @@ class WeibullGenerator(EventGenerator):
     def generateNextEvent(self, current_time):
         current_time -= self.start_time
         if current_time < 0:
-            print current_time
+            print "current_time in weibull:", current_time
+            print "start_time: ", self.start_time
             raise Exception("Negative current time!")
 
         r = random()

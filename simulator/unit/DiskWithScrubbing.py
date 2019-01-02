@@ -1,4 +1,4 @@
-from numpy import isnan, isinf
+from numpy import isnan, isinf, ceil
 from simulator.Event import Event
 from simulator.unit.Disk import Disk
 
@@ -9,6 +9,8 @@ class DiskWithScrubbing(Disk):
         super(DiskWithScrubbing, self).__init__(name, parent, parameters)
         self.last_recovery_time = 0.0
         self.last_scrub_start = 0.0
+        # Every 2 weeks = 336 hours scan the whole system.
+        self.scan_period = 336
 
     def setLastScrubStart(self, last_scrub_start):
         self.last_scrub_start = last_scrub_start
@@ -33,6 +35,10 @@ class DiskWithScrubbing(Disk):
         current_time = start_time
         if self.children != [] or len(self.children):
             raise Exception("Disk should not have any children")
+
+        if start_time == 0:
+            self.last_recovery_time = 0
+            self.latent_error_generator.reset(0)
 
         while True:
             if self.last_recovery_time < 0:
@@ -64,7 +70,7 @@ class DiskWithScrubbing(Disk):
             if failure_time > end_time:
                 self.generateLatentErrors(result_events, current_time,
                                           end_time)
-                self.generateScrub(result_events, current_time, end_time)
+                # self.generateScrub(result_events, current_time, end_time)
                 break
 
             if failure_time < start_time or failure_time > end_time:
@@ -89,10 +95,10 @@ class DiskWithScrubbing(Disk):
 
             # scrubs get generated depending on the scrub frequency, starting
             # from the previous scrub finish event.
-            self.generateScrub(result_events, current_time, failure_time)
+            # self.generateScrub(result_events, current_time, failure_time)
 
             # scrub generator is reset on the next recovery from the disk error
-            self.scrub_generator.reset(self.last_recovery_time)
+            # self.scrub_generator.reset(self.last_recovery_time)
 
             # move the clocks, next iteration starts from the next recovery
             current_time = self.last_recovery_time
@@ -144,6 +150,11 @@ class DiskWithScrubbing(Disk):
                 break
             e = Event(Event.EventType.LatentDefect, current_time, self)
             result_events.addEvent(e)
+            latent_recovery_time = ceil(current_time/self.scan_period)*self.scan_period
+            if latent_recovery_time >= end_time:
+                latent_recovery_time = end_time
+            recovery_e = Event(Event.EventType.LatentRecovered, latent_recovery_time, self)
+            result_events.addEvent(recovery_e)
 
     def generateScrub(self, result_events, start_time, end_time):
         if isinf(start_time) or isnan(start_time):
@@ -170,3 +181,4 @@ class DiskWithScrubbing(Disk):
             result_events.addEvent(scrub_start)
             current_time = scrub_time
             self.scrub_generator.reset(current_time)
+

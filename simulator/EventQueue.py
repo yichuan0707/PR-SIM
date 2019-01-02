@@ -1,4 +1,5 @@
 from collections import OrderedDict
+from simulator.Event import Event
 
 
 class EventQueue(object):
@@ -72,7 +73,6 @@ class EventQueue(object):
             size += len(item)
         return size
 
-    # Jave's output function is different with python, need to study.
     def printAll(self, file_name, msg):
         with open(file_name, 'w+') as out:
             out.write(msg + "\n")
@@ -83,3 +83,17 @@ class EventQueue(object):
                 for e in res:
                     if e.ignore is False:
                         out.write(e.toString())
+
+    def printEvents(self, file_name, msg, event_type=Event.EventType.Failure, sort = True):
+        with open(file_name, 'w') as fp:
+            fp.write(msg + "\n")
+            keys = EventQueue.events.keys()
+            if sort:
+                keys.sort()
+            for t in keys:
+                res = EventQueue.events[t]
+                for e in res:
+                    if (e.ignore is False) and \
+                            e.getType() == event_type:
+                        fp.write(e.toString())
+

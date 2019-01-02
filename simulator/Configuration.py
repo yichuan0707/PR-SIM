@@ -37,8 +37,6 @@ class Configuration(object):
         self.datacenters = int(d.pop("datacenters", 1))
 
         self.event_file = d.pop("event_file", None)
-        # if self.event_file is not None:
-        #     self.event_file = repr(self.event_file)[1:-1]
 
         # If n <= 15 in each stripe, no two chunks are on the same rack.
         self.num_chunks_diff_racks = 15
@@ -59,6 +57,8 @@ class Configuration(object):
         self.installment_size = int(d["installment_size"])
         self.availability_counts_for_recovery = self._bool(d[
             "availability_counts_for_recovery"])
+        self.max_degraded_slices = self.conf.getfloat(
+            "Lazy Recovery", "max_degraded_slices")
 
         self.layer_num = 1
         if self.tiered_storage:
@@ -92,8 +92,6 @@ class Configuration(object):
         if self.lazy_recovery:
             if not self.conf.has_section("Lazy Recovery"):
                 raise Exception("Lack of Lazy Recovery Settings!")
-            self.max_degraded_slices = self.conf.getfloat(
-                "Lazy Recovery", "max_degraded_slices")
             ava_to_dt = self.conf.get(
                 "Lazy Recovery", "availability_to_durability_threshold")
 
