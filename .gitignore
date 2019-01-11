@@ -5,5 +5,9 @@ build
 *.egg
 *.egg-info
 .eggs/*
+*.log
+*.csv
+log/*
+trace/*
 
 .testrepository/*
