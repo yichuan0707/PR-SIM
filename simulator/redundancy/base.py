@@ -1,4 +1,3 @@
-from simulator.Configuration import Configuration
 
 
 class Base(object):
@@ -8,9 +7,6 @@ class Base(object):
         self.m = params['m']
         self.n = self.k + self.m
         self._check()
-
-        conf = Configuration()
-        self.chunk_size = conf.chunk_size
 
     def _check(self):
         if self.k < 0 or self.m < 0:

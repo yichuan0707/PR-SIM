@@ -1,0 +1,125 @@
+129,9321600.0,2,other software
+129,9631200.0,5,other software
+129,9647400.0,5,other software
+129,15268800.0,900,system board
+129,41500800.0,11618,kernel software
+130,14487300.0,13925,other
+131,14487300.0,4028,network
+131,15249600.0,1215,other
+131,34089420.0,11,interconnect soft error
+131,35583480.0,2,undetermined
+131,38056740.0,5,undetermined
+131,40663740.0,1,undetermined
+131,43766880.0,1,undetermined
+131,43772220.0,1,undetermined
+131,47035500.0,2942,undetermined
+131,50745120.0,408,undetermined
+132,14487300.0,4029,network
+132,34977600.0,2,memory dimm
+132,38483940.0,1152,network
+132,38553180.0,2,undetermined
+133,14487300.0,4030,network
+133,43083480.0,0,memory dimm
+133,43504320.0,2,memory dimm
+133,44041260.0,21,memory dimm
+133,46753500.0,618,cpu
+133,47268780.0,25,disk drive
+134,34988520.0,1,memory dimm
+134,44898780.0,6,undetermined
+135,38055900.0,1284,undetermined
+137,18025200.0,255840,other software
+138,19335300.0,225725,interconnect interface
+138,38055840.0,1293,network
+139,42387720.0,1,undetermined
+140,39865860.0,10083,undetermined
+141,21034800.0,2895,memory dimm
+142,9476400.0,5,other software
+142,50433300.0,3,undetermined
+145,44705580.0,174,undetermined
+145,49680900.0,428,disk drive
+147,8487420.0,487,system board
+148,34104120.0,16874,memory dimm
+148,35557860.0,196,memory dimm
+148,38079060.0,962,undetermined
+148,44370720.0,5,memory dimm
+149,9475800.0,2,other software
+149,38135700.0,1,undetermined
+150,47668440.0,135,disk drive
+151,38049540.0,484,undetermined
+152,38056200.0,14,undetermined
+154,38056140.0,1292,network
+155,43722300.0,412,memory dimm
+155,46372140.0,19,memory dimm
+159,24856620.0,133430,disk drive
+162,34770300.0,4321,undetermined
+162,38056380.0,1299,network
+167,33969900.0,230,interconnect soft error
+168,33403800.0,15,40mm cooling fan
+168,34437900.0,1,undetermined
+168,35262180.0,415,undetermined
+168,35819100.0,2,os
+168,36306900.0,240,undetermined
+173,6311220.0,3534,system board
+174,37983900.0,1,undetermined
+175,12659580.0,2967,system board
+175,14658600.0,1453,disk drive
+180,37983960.0,1,undetermined
+182,10233600.0,2,other software
+194,38056080.0,1,network
+198,38063880.0,2,undetermined
+198,38066040.0,1,undetermined
+198,38066280.0,1,undetermined
+198,39869460.0,2,undetermined
+198,39869820.0,2,undetermined
+198,42198060.0,312,kernel software
+199,38063280.0,3,undetermined
+199,38063580.0,39,undetermined
+199,38067060.0,20,network
+199,38070540.0,2,network
+199,38140980.0,20,network
+199,38146980.0,4,network
+199,38179860.0,158,network
+199,38191860.0,89,network
+199,38203740.0,266,network
+199,38230380.0,236,interconnect misc
+199,39125700.0,733,undetermined
+203,7921620.0,89,other
+203,9322800.0,2,other software
+203,9478200.0,2,other software
+203,9547200.0,2,other software
+203,34918860.0,2,memory dimm
+204,9036600.0,1,cpu
+204,9133200.0,15,cpu
+204,9192600.0,5,cpu
+208,38055780.0,1,undetermined
+210,38056680.0,6,network
+211,13265940.0,2,interconnect soft error
+212,38056620.0,6,network
+213,46190220.0,21,memory dimm
+214,38043300.0,1,undetermined
+215,14579400.0,11525,system board
+218,42387960.0,6,undetermined
+220,45885660.0,0,interconnect interface
+222,38049420.0,1,undetermined
+222,44620200.0,4637,undetermined
+225,8519580.0,5,memory dimm
+228,8200800.0,2232,memory dimm
+232,21148020.0,8,disk drive
+232,38056560.0,8,network
+233,12665700.0,2880,system board
+234,48993840.0,19,memory dimm
+238,15268800.0,910,system board
+239,12668220.0,2843,system board
+239,13359600.0,2,interconnect soft error
+241,42387000.0,1,undetermined
+242,38894820.0,104,network
+242,39862140.0,2,undetermined
+252,38056260.0,1,undetermined
+254,39861900.0,1,undetermined
+254,50254320.0,91,undetermined
+255,9651000.0,2,other software
+255,34438560.0,2,undetermined
+255,40733460.0,34,undetermined
+255,42289500.0,2,undetermined
+255,43767900.0,63,undetermined
+255,50312220.0,0,undetermined

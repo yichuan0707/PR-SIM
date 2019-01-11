@@ -1,0 +1,475 @@
+1,2633400.0,60,ups
+1,6944400.0,555,maintenance
+1,7462800.0,525,other
+1,8668800.0,96,human error
+1,11790600.0,2,other software
+1,12176760.0,964,power supply
+1,12416400.0,65,power outage
+1,16531200.0,49815,resource mgmt system
+1,20762820.0,93,power spike
+1,21597300.0,600,network
+1,23270400.0,220,power supply
+1,24392700.0,135,scheduler software
+1,25560000.0,150,gig e switch
+1,25704000.0,92,network
+1,25788600.0,120,network
+1,26465400.0,110,network
+1,32373000.0,90,network
+1,35830200.0,50,scheduler software
+1,42870600.0,633,other
+1,45840600.0,50,power outage
+1,47462400.0,150,dst-upgrd/install os sftw
+1,49098600.0,75,dst-upgrd/install os sftw
+1,50479200.0,220,maintenance
+1,53541000.0,1090,power outage
+1,54013500.0,840,dst-scan for errors /scratch
+1,56527200.0,115,dst-upgrd/instl 3rdparty sftw
+1,57218400.0,145,maintenance
+1,57672000.0,210,maintenance
+1,60760800.0,105,dst-scan for errors /scratch
+1,62087400.0,540,power outage
+1,73976400.0,275,network
+1,78213600.0,561,maintenance
+1,78231000.0,271,ethernet copper cable
+1,87393600.0,48,os
+1,94308300.0,2685,undetermined
+1,98820000.0,1255,undetermined
+1,112782600.0,4,other software
+1,115084800.0,2175,undetermined
+1,115106400.0,180,dst-scan for errors /scratch
+1,124299600.0,3,other software
+1,124468200.0,5,nfs
+1,140052600.0,210,network
+2,11099640.0,201,power supply
+2,22700700.0,198,power supply
+2,42725160.0,10,other software
+2,54247320.0,10,user code
+3,4515420.0,116,network
+3,15631740.0,195,power supply
+3,38243280.0,112,network
+3,38852400.0,25,other software
+3,54063900.0,31655,scsi drive
+3,91730700.0,1080,undetermined
+3,122288340.0,1696,undetermined
+4,15403620.0,43495,power supply
+4,20253120.0,1,undetermined
+4,36775500.0,5,undetermined
+4,37724160.0,153,undetermined
+4,40328520.0,224,power supply
+5,14036580.0,51,power supply
+5,42737400.0,10,kernel software
+5,74019600.0,8,network
+6,13872300.0,2742,power supply
+6,42429360.0,418,power supply
+6,62158620.0,123,undetermined
+6,73992900.0,3285,scsi controller
+6,112856100.0,238,cpu
+6,115831680.0,67,undetermined
+7,4161360.0,4667,power supply
+8,21406140.0,2,nfs
+8,35551860.0,1,other software
+8,58218660.0,67,undetermined
+8,109696320.0,2908,network
+9,37248600.0,256,power supply
+10,14140800.0,291,network
+10,138287100.0,15,undetermined
+11,5100060.0,2180,power supply
+11,62027700.0,783,network
+11,89053200.0,1260,os
+12,14389800.0,97,power supply
+12,37817280.0,327,power supply
+12,37836900.0,2379,scsi drive
+13,16438200.0,268,power supply
+13,38853540.0,243,scheduler software
+13,109239360.0,424,network
+13,122288340.0,1696,undetermined
+14,16345680.0,359,undetermined
+14,20091120.0,13,network
+15,14323080.0,155,power supply
+15,26407800.0,27,other software
+15,38856780.0,162,scheduler software
+15,40820940.0,60,undetermined
+15,46943100.0,15,kernel software
+17,33272400.0,827,power supply
+18,13319940.0,3314,network
+18,78236100.0,23226,ethernet copper cable
+19,20172300.0,164,power supply
+19,122288220.0,1698,undetermined
+19,129222900.0,6646,network
+20,20564460.0,329,power supply
+20,34154400.0,422,power supply
+20,112012200.0,105,network
+20,138287100.0,15,undetermined
+20,138820020.0,1268,undetermined
+21,46976700.0,18,other software
+22,9582360.0,4039,fan assembly
+24,42059820.0,142,power supply
+25,26626800.0,509,other software
+25,29179140.0,252,other software
+25,29958660.0,14,other
+25,30061200.0,10,other
+25,31072320.0,35,system board
+25,46989360.0,74,kernel software
+27,54526800.0,10,unresolvable
+30,6977700.0,6832,power supply
+30,27353340.0,2,other software
+31,40297380.0,9,other software
+31,40815780.0,9,os
+31,41014260.0,105,power supply
+32,4118460.0,6882,power supply
+33,20579880.0,67,power supply
+33,109255560.0,1619,network
+33,119959200.0,30,other software
+34,138725280.0,12,other software
+35,5823720.0,1771,human error
+35,12420300.0,1277,1 gbit ethernet card
+35,14140800.0,960,scsi drive
+35,22435020.0,255,power supply
+35,46980600.0,229,kernel software
+35,110291400.0,37,human error
+36,74019840.0,13,network
+36,85157880.0,30,human error
+39,40042800.0,240,scheduler software
+40,37828260.0,1113,power supply
+40,89914800.0,1360,undetermined
+41,41383980.0,63,kernel software
+41,82371000.0,115,os
+44,41438280.0,10,scheduler software
+44,138287100.0,15,undetermined
+45,35607060.0,347,power supply
+45,41399460.0,27,kernel software
+47,37744740.0,181,power supply
+47,43757340.0,266,power supply
+47,138287100.0,20,undetermined
+48,34677660.0,203,power supply
+48,106714860.0,339,undetermined
+49,63761400.0,634,other software
+50,40810140.0,80,scheduler software
+50,41394480.0,14,kernel software
+50,95027640.0,884,undetermined
+51,83609280.0,17,os
+51,115645500.0,2888,system board
+51,116332800.0,45,undetermined
+51,116335860.0,177,wire harness
+52,78933000.0,1480,scsi drive
+52,116332860.0,227,undetermined
+53,69031860.0,532,os
+53,119296200.0,750,scheduler software
+54,41376660.0,16,kernel software
+54,84164880.0,415,scheduler software
+54,116517600.0,90,network
+55,23988600.0,1110,scsi drive
+55,78236100.0,43386,scsi controller
+55,82371000.0,15,os
+56,78942000.0,10,undetermined
+57,112875300.0,10,os
+59,46995000.0,631,other software
+60,26110740.0,252,user code
+60,26382300.0,53,user code
+60,28714500.0,30,user code
+60,40293600.0,30,scheduler software
+60,66098940.0,689,1 gbit ethernet card
+60,89669160.0,1199,undetermined
+60,97518600.0,1002,undetermined
+60,98984100.0,55,undetermined
+60,129628800.0,450,scratch drive
+61,46987080.0,115,kernel software
+61,62499540.0,136,ethernet cable
+61,115814520.0,262,undetermined
+62,82371000.0,60,os
+62,116352000.0,2850,power cord
+63,45250200.0,30,undetermined
+63,98820000.0,1255,scsi drive
+64,91484820.0,2378,undetermined
+65,34035360.0,13,undetermined
+65,46986360.0,128,kernel software
+66,114720360.0,5211,os
+67,137523600.0,2454,undetermined
+68,29406600.0,15810,dst-upgrd/install os sftw
+68,39015180.0,5,upgrade/install 3rd party sftw
+68,42725160.0,294,other software
+68,43165320.0,5,kernel software
+68,50327340.0,131,kernel software
+68,71223900.0,7325,scsi drive
+68,99506040.0,343,scsi drive
+68,112205700.0,4,human error
+69,44038920.0,55,kernel software
+69,50327340.0,336,kernel software
+69,55935600.0,460,kernel software
+69,84188460.0,12,undetermined
+69,87206160.0,211,undetermined
+69,112215000.0,670,undetermined
+70,40443060.0,634,power supply
+70,41353260.0,39,kernel software
+70,71179920.0,166,scsi drive
+70,104926080.0,1432,scsi drive
+71,21484140.0,16,human error
+71,29232720.0,18708,dst-upgrd/install os sftw
+71,42652440.0,126,scheduler software
+71,108583920.0,30215,scsi drive
+71,112877700.0,3,os
+72,21369600.0,1470,nfs
+72,21460500.0,40,other
+72,21482880.0,57,other
+72,28715400.0,27330,dst-upgrd/install os sftw
+72,40482000.0,30,ethernet cable
+72,41363520.0,4,kernel software
+72,41448900.0,2,kernel software
+72,41526420.0,64,other software
+72,45677700.0,1185,other software
+72,46969140.0,21,kernel software
+72,47382420.0,9,other software
+72,47573820.0,25,kernel software
+73,58290000.0,45,scsi drive
+73,76435800.0,107,os
+73,109070700.0,184,other
+74,54301800.0,75,power supply
+74,106790400.0,2026,undetermined
+75,57356100.0,9526,power supply
+75,57696900.0,944,undetermined
+75,57761160.0,2785,undetermined
+75,57950100.0,1425,undetermined
+75,58371000.0,20,undetermined
+75,58894980.0,11387,system board
+75,62406180.0,124,network
+75,62453100.0,1187,undetermined
+75,62640120.0,732,memory dimm
+75,62695620.0,6758,cpu
+75,63123000.0,233,cpu
+77,115051020.0,147,other software
+78,101502000.0,4080,power supply
+78,117467940.0,783,memory dimm
+78,119720400.0,4211,memory dimm
+78,127502700.0,3,undetermined
+79,59569080.0,92,undetermined
+79,61208520.0,3,other software
+79,61228260.0,56,other software
+79,67421700.0,65,scheduler software
+79,74700900.0,164,undetermined
+79,80336700.0,44,undetermined
+79,96622200.0,382,ethernet copper cable
+79,101411760.0,934,ethernet copper cable
+79,103826580.0,1102,other software
+79,116003400.0,60,undetermined
+79,135955560.0,4,os
+80,57852720.0,7333,nfs
+80,65115180.0,3,undetermined
+80,65461980.0,199,undetermined
+80,76088760.0,13,undetermined
+80,95011260.0,2,undetermined
+80,95012820.0,2,undetermined
+80,112718700.0,9,undetermined
+84,58995240.0,1221,power supply
+85,21028620.0,2895,undetermined
+86,86718780.0,14,other software
+89,68694660.0,624,memory dimm
+89,69708120.0,1078,undetermined
+89,70125840.0,2386,undetermined
+89,70269000.0,3173,power supply
+89,70797660.0,284,undetermined
+89,71470920.0,553,memory dimm
+89,75758520.0,2729,memory dimm
+90,68712300.0,10,human error
+92,83251200.0,1,os
+94,15236400.0,15,scheduler software
+94,25764900.0,562,power supply
+94,55100820.0,1076,undetermined
+97,76114440.0,12366,nfs
+99,74931180.0,1575,undetermined
+103,41733000.0,794,undetermined
+104,4912260.0,12,power supply
+105,41779260.0,16,human error
+105,76809960.0,444,other software
+105,78321600.0,294,user code
+107,6195540.0,182,scheduler software
+107,23789880.0,10,os
+107,38622420.0,2047,undetermined
+107,83166540.0,150,undetermined
+108,36208320.0,1389,undetermined
+109,54537900.0,266,network
+109,62081100.0,7335,undetermined
+110,34480260.0,3669,system board
+110,36673200.0,180,human error
+111,16392720.0,386,os
+111,17615400.0,78,memory dimm
+111,26126700.0,14,undetermined
+111,26265660.0,9,memory dimm
+111,26419980.0,3966,memory dimm
+111,26710080.0,588,memory dimm
+111,26798460.0,479,memory dimm
+111,43671300.0,112,ethernet copper cable
+111,82535940.0,231,undetermined
+111,83121660.0,2379,system board
+113,33815820.0,11439,undetermined
+114,9454620.0,4243,ethernet fibre cable
+114,10947720.0,1120,human error
+114,17057940.0,10476,ethernet cable
+116,85521300.0,609,undetermined
+116,85715040.0,3165,kernel software
+116,86333820.0,3153,undetermined
+117,9454620.0,4243,other software
+117,21288900.0,1319,ethernet cable
+117,60177600.0,1230,undetermined
+117,67458060.0,704,system board
+118,6968760.0,18,parallel file system
+121,32455800.0,14,human error
+122,838800.0,240,memory dimm
+122,77977500.0,1692,network
+123,15236400.0,15,scheduler software
+123,16361400.0,17,os
+123,22006740.0,21,undetermined
+123,23975880.0,405,memory dimm
+123,24328140.0,6,undetermined
+123,25019880.0,24,undetermined
+123,37706400.0,11893,undetermined
+123,62522100.0,7155,site ethernet switch
+123,71204340.0,3345,power supply
+124,77126220.0,23,undetermined
+124,77342280.0,1707,undetermined
+126,3948300.0,394,power supply
+130,26667900.0,15,scheduler software
+132,62080920.0,4458,memory dimm
+132,69151260.0,349,other software
+133,32388360.0,1122,undetermined
+133,47874300.0,1098,undetermined
+133,55238040.0,53,undetermined
+133,55756800.0,1977,other
+133,57063180.0,39006,memory dimm
+133,59492880.0,12,memory dimm
+133,59781240.0,22596,memory dimm
+133,61149000.0,40210,system board
+133,68173920.0,3553,undetermined
+133,70370040.0,7416,undetermined
+133,70926060.0,999,system board
+133,85449120.0,524,undetermined
+135,28553400.0,45,undetermined
+136,69151260.0,1594,undetermined
+137,17239500.0,245,ethernet cable
+141,43026240.0,766,memory dimm
+141,74594880.0,12,graphics accel hdwr
+142,68806680.0,2882,undetermined
+142,69832020.0,313,memory dimm
+142,82137600.0,5460,undetermined
+142,82535940.0,231,undetermined
+142,82685100.0,3804,memory dimm
+142,83778900.0,1228,memory dimm
+144,7988400.0,360,memory dimm
+144,25439400.0,20,undetermined
+144,56226540.0,1326,memory module
+144,56493300.0,2590,memory dimm
+144,63885600.0,6125,memory dimm
+144,64990380.0,22112,memory dimm
+146,62078700.0,4495,undetermined
+147,24212700.0,405,undetermined
+147,28167360.0,494,undetermined
+147,28573080.0,436,power supply
+147,30120660.0,431,undetermined
+147,36114000.0,2958,undetermined
+147,36365640.0,940,undetermined
+147,36455400.0,777,undetermined
+147,37547940.0,105,undetermined
+147,38753040.0,419,memory dimm
+147,42400860.0,1184,memory dimm
+149,4523100.0,515,undetermined
+151,85884120.0,750,memory dimm
+152,54775560.0,5319,memory dimm
+152,62017680.0,5512,undetermined
+152,67743180.0,352,scheduler software
+155,41231100.0,530,undetermined
+156,49513740.0,2177,memory dimm
+156,49767300.0,825,undetermined
+156,49826700.0,2656,memory dimm
+156,50146800.0,3309,cpu
+156,51641820.0,1325,undetermined
+156,51864420.0,3058,undetermined
+156,52091520.0,10907,undetermined
+156,52789860.0,2339,system board
+156,52939200.0,18450,memory dimm
+156,54065940.0,1451,memory dimm
+156,54753300.0,5690,memory dimm
+156,55852980.0,177,memory dimm
+156,56565480.0,7168,cpu
+156,59324400.0,1356,memory module
+156,59414940.0,2271,memory dimm
+156,63586560.0,2014,system board
+156,84432720.0,138,undetermined
+157,9893940.0,291,undetermined
+157,54661020.0,31,power cord
+157,86823600.0,643,undetermined
+158,4664100.0,3543,scheduler software
+158,4880340.0,537,undetermined
+158,7405980.0,1133,undetermined
+158,9849600.0,743,memory dimm
+158,17080200.0,34,scheduler software
+158,21212760.0,229,undetermined
+158,21655440.0,2518,undetermined
+158,23031000.0,105,undetermined
+158,36384000.0,438,undetermined
+158,37137180.0,2256,undetermined
+158,37676280.0,536,undetermined
+158,37826400.0,862,user code
+158,41788860.0,13,undetermined
+158,43227000.0,420,undetermined
+158,48499200.0,380,ethernet copper cable
+158,49780080.0,612,undetermined
+158,49826700.0,2656,system board
+158,50671920.0,2833,undetermined
+158,51234180.0,5205,system board
+158,52332120.0,45,undetermined
+158,52389000.0,47,undetermined
+158,52493880.0,99,undetermined
+158,52829100.0,7364,os
+158,53380440.0,20911,memory dimm
+158,54658500.0,100,memory dimm
+158,54838860.0,3963,undetermined
+158,55190100.0,1335,undetermined
+158,56599200.0,408,memory dimm
+158,56797140.0,1952,memory dimm
+158,56948760.0,726,network
+158,57986580.0,1738,undetermined
+158,61719000.0,50,undetermined
+158,63474300.0,1115,kernel software
+158,63805200.0,154,other software
+158,70047000.0,3700,undetermined
+158,70918080.0,674,undetermined
+158,71078100.0,60,undetermined
+158,71397000.0,80,memory dimm
+158,76185660.0,844,undetermined
+158,81094560.0,123,undetermined
+158,81495420.0,4527,undetermined
+158,81790800.0,30,memory dimm
+158,81843300.0,335,other software
+158,82459800.0,10,undetermined
+158,83046000.0,593,undetermined
+158,83635140.0,983,memory dimm
+158,83897220.0,3193,undetermined
+158,84353700.0,390,memory dimm
+158,87140520.0,1123,undetermined
+159,23818320.0,29,kernel software
+159,50343900.0,23,power cord
+159,62351400.0,965,os
+160,14999700.0,3207,power outage
+160,26761440.0,2664,memory dimm
+160,29680380.0,17,memory dimm
+160,37137180.0,727,undetermined
+160,56016720.0,363,os
+160,56852040.0,46,os
+160,57655740.0,229,security software
+160,62522580.0,6757,network
+160,64486020.0,87,undetermined
+160,66575640.0,71,scheduler software
+160,70467240.0,66,scheduler software
+160,70965420.0,34,scheduler software
+160,70987140.0,73,scheduler software
+160,77554140.0,55,undetermined
+161,86817540.0,1231,memory dimm
+162,47827680.0,227,system board
+162,64137600.0,106,scheduler software
+163,9848400.0,503,undetermined
+163,38765220.0,227,undetermined
+163,46205400.0,780,undetermined
+163,46279800.0,1905,memory dimm
+164,10320300.0,415,kernel software
+164,17004000.0,11375,ethernet cable
+164,51158160.0,555,other software
+164,64137600.0,85,other software

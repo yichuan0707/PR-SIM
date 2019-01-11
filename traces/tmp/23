@@ -1,0 +1,564 @@
+1,2876400.0,350,unresolvable
+1,5484780.0,18,
+1,6306360.0,84,unresolvable
+1,7716600.0,4,dst
+1,8515560.0,23,unresolvable
+1,11776620.0,103,
+1,11913300.0,125,
+1,12456120.0,52,unresolvable
+1,12471000.0,30,
+1,13159800.0,210,dst
+1,15325200.0,220,
+1,16089120.0,223,
+1,16526700.0,853,
+1,17395500.0,55,
+1,20691000.0,323,node board
+1,21051240.0,16,other software
+1,22149540.0,8,other software
+1,27244800.0,240,maintenance
+1,27604800.0,39,unresolvable
+1,27617640.0,81,memory dimm
+1,27936000.0,765,maintenance
+1,28047780.0,353,router board
+1,28296000.0,20,dst
+1,28314000.0,210,maintenance
+1,28454400.0,240,dst
+1,28622520.0,18,unresolvable
+1,28723200.0,85,node board
+1,28922400.0,80,maintenance
+1,29170920.0,25,unresolvable
+1,29225460.0,539,power outage
+1,29258100.0,105,human error
+1,29523600.0,120,maintenance
+1,30132000.0,125,maintenance
+1,30736800.0,121,maintenance
+1,31946400.0,120,maintenance
+1,32551200.0,90,maintenance
+1,33760800.0,110,maintenance
+1,34365600.0,120,maintenance
+1,34931460.0,649,dst
+1,37346400.0,105,maintenance
+1,38556000.0,150,dst
+1,39273180.0,73,power supply
+1,40370400.0,120,maintenance
+1,41538000.0,44,msc board
+1,42281040.0,9,maintenance
+1,42789600.0,120,maintenance
+1,42822000.0,52,other software
+1,42892020.0,12,other software
+1,45208800.0,120,dst
+1,45216000.0,300,dst
+1,46509000.0,125,other software
+1,47235900.0,65,power outage
+1,48232800.0,120,maintenance
+1,48240000.0,325,dst
+1,50652000.0,210,maintenance
+1,52168560.0,914,power outage
+1,53676000.0,50,maintenance
+1,53960280.0,92,power spike
+1,53960280.0,92,power spike
+1,54021600.0,965,power outage
+1,54801000.0,150,ups
+1,58514400.0,120,maintenance
+1,60829140.0,48,undetermined
+1,60860400.0,125,router board
+1,60890400.0,30,maintenance
+1,60955200.0,75,node board
+1,61106520.0,63,maintenance
+1,61538400.0,120,maintenance
+1,61574700.0,15,other software
+1,61884840.0,3,undetermined
+1,62062200.0,32,dst
+1,62367720.0,19,memory dimm
+1,63046800.0,1440,security
+1,63958500.0,55,maintenance
+1,64078320.0,79,other software
+1,64562400.0,360,dst-upgrd/instl os sftw
+1,65167200.0,180,upgrade/install os sftw
+1,65273580.0,4,unresolvable
+1,66376800.0,100,maintenance
+1,66565200.0,6,unresolvable
+1,67594500.0,210,other software
+1,68904960.0,47,power supply
+1,69273000.0,106,power supply
+1,69400800.0,80,dst-scan for errors /scratch
+1,70018200.0,7,other software
+1,71820000.0,75,maintenance
+1,75546900.0,7,unresolvable
+1,76674900.0,14,interconnect interface
+1,77263200.0,120,maintenance
+1,77270400.0,180,dst-upgrd/instl os sftw
+1,77281200.0,165,scheduler software
+1,78650880.0,6,unresolvable
+1,78955200.0,8,disk io
+1,79626780.0,8,disk io
+1,79682400.0,194,maintenance
+1,82101600.0,70,maintenance
+1,82106100.0,120,dst-scan for errors /scratch
+1,82987380.0,20,unresolvable
+1,83228880.0,22,patch install
+1,85125600.0,124,maintenance
+1,85250040.0,9,scheduler software
+1,86376000.0,23,undetermined
+1,86429820.0,28,scheduler software
+1,87544800.0,145,maintenance
+1,89757060.0,87,power supply
+1,90572400.0,630,maintenance
+1,90695760.0,7,undetermined
+1,91214520.0,5,undetermined
+1,91373340.0,8,undetermined
+1,91782000.0,85,scheduler software
+1,91881000.0,10,other software
+1,92053320.0,8,other software
+1,92489520.0,10,unresolvable
+1,92496120.0,8,undetermined
+1,92988000.0,120,maintenance
+1,93065400.0,6,undetermined
+1,93137400.0,360,undetermined
+1,93173940.0,7,undetermined
+1,93181440.0,7,undetermined
+1,93628980.0,38,ge board
+1,96937920.0,498,network
+1,97828200.0,95,scheduler software
+1,98430000.0,112,maintenance
+1,100850400.0,140,maintenance
+1,101045700.0,192,power outage
+1,102137520.0,279,ups
+1,103269600.0,154,maintenance
+1,103899120.0,12,memory dimm
+1,105103800.0,120,ups
+1,105688800.0,120,maintenance
+1,108712800.0,125,maintenance
+1,108720300.0,295,dst-upgrd/instl os sftw
+1,108830040.0,11,human error
+1,108994380.0,142,chillers
+1,109761600.0,15,unresolvable
+1,110459640.0,12,memory dimm
+1,111132000.0,216,maintenance
+1,111322500.0,8,scheduler software
+1,111329520.0,29,scheduler software
+1,111334440.0,42,scheduler software
+1,111833400.0,11,memory dimm
+1,114158100.0,85,maintenance
+1,114604620.0,60,gig e connection
+1,114862980.0,28,power supply
+1,114886800.0,65,power outage
+1,116575200.0,120,maintenance
+1,116610660.0,107,undetermined
+1,117961200.0,43,dst-scan for errors /scratch
+1,118992900.0,145,maintenance
+1,119001600.0,68,network
+1,119183100.0,9,undetermined
+1,119257200.0,11,undetermined
+1,119523000.0,24,power supply
+1,121939200.0,1320,os
+1,122018400.0,160,maintenance
+1,124067700.0,600,network
+1,124437600.0,110,maintenance
+1,128070000.0,57,dst-upgrd/instl os sftw
+1,128295300.0,13,other software
+1,128454840.0,13,undetermined
+1,129880800.0,150,maintenance
+1,131698800.0,10,scheduler software
+1,132213600.0,1546,maintenance
+1,132840000.0,9,scheduler software
+1,134719200.0,95,maintenance
+1,135420300.0,54,undetermined
+1,135882720.0,15,undetermined
+1,137743200.0,110,maintenance
+1,138289140.0,102,other software
+1,139670400.0,19,memory dimm
+1,140162400.0,133,maintenance
+1,142676940.0,26,undetermined
+1,142678980.0,8,undetermined
+1,143449500.0,30,other software
+1,145381200.0,155,undetermined
+1,145605600.0,110,dst-scan for errors /scratch
+1,148024800.0,125,maintenance
+1,150444000.0,120,maintenance
+1,151656120.0,5,cluster file system
+1,152410200.0,805,interconnect interface
+1,152874900.0,19,other software
+1,153086760.0,14,undetermined
+1,153468000.0,120,maintenance
+1,153675300.0,15,scheduler software
+1,155887200.0,123,maintenance
+1,155894820.0,443,security
+1,156067200.0,180,network
+1,156484800.0,822,network
+1,156675480.0,5,scheduler software
+1,158911200.0,130,maintenance
+1,158931900.0,16,undetermined
+1,159688800.0,76,network
+1,160142400.0,180,maintenance
+1,161330400.0,126,maintenance
+1,162536220.0,18,undetermined
+1,162747900.0,18,scratch fs
+1,162822600.0,60,undetermined
+1,163749600.0,170,maintenance
+1,164123940.0,14,undetermined
+1,164557800.0,540,power outage
+1,165920760.0,72,power supply
+1,166168800.0,145,maintenance
+1,169192800.0,137,maintenance
+1,169770780.0,16,undetermined
+1,170995620.0,175,power supply
+1,174029400.0,155,dst-upgrd/instl os sftw
+1,176446800.0,215,network
+1,176735220.0,88,undetermined
+1,177055200.0,100,maintenance
+1,179085480.0,27,power supply
+1,179307000.0,193,power spike
+1,179474400.0,125,maintenance
+1,182498400.0,138,maintenance
+1,185205600.0,30,scratch fs
+1,189351240.0,136,fan
+1,190005540.0,76,power supply
+1,196682400.0,13,other software
+1,196778700.0,2685,undetermined
+1,202455000.0,300,network
+1,208504800.0,115,dst-scan for errors /scratch
+1,209204700.0,140,disk drive
+1,211528800.0,120,dst-scan for errors /scratch
+1,214852080.0,89,power supply
+1,214938600.0,90,undetermined
+2,3657600.0,240,maintenance
+2,4122000.0,120,maintenance
+2,4351680.0,97,memory dimm
+2,4368300.0,120,unresolvable
+2,4402860.0,19,unresolvable
+2,4466160.0,130,unresolvable
+2,4550400.0,31,unresolvable
+2,4622040.0,21,unresolvable
+2,4633800.0,26,upgrade/install os sftw
+2,4726800.0,255,maintenance
+2,4747620.0,243,memory dimm
+2,4773900.0,57,memory dimm
+2,4779000.0,65,dst
+2,4788000.0,67,fibre drive
+2,4797900.0,117,fibre drive
+2,4807800.0,235,memory dimm
+2,4867200.0,240,dst
+2,5320020.0,73,maintenance
+2,5335200.0,80,maintenance
+2,5638260.0,539,power outage
+2,5670600.0,110,human error
+2,5936400.0,120,maintenance
+2,6544800.0,131,maintenance
+2,6561900.0,110,power supply
+2,7149600.0,80,maintenance
+2,7902360.0,19,unresolvable
+2,8094420.0,113,memory dimm
+2,8359200.0,120,maintenance
+2,8816820.0,262,power supply
+2,8964000.0,170,maintenance
+2,10173600.0,110,maintenance
+2,10268100.0,5,other software
+2,10778400.0,80,maintenance
+2,11344260.0,649,dst
+2,13200900.0,3,other software
+2,13426860.0,9,undetermined
+2,13759200.0,105,maintenance
+2,14968800.0,150,dst
+2,15894900.0,8,other software
+2,16783200.0,120,maintenance
+2,16968720.0,9,undetermined
+2,17992800.0,400,maintenance
+2,18693480.0,35,maintenance
+2,18776220.0,45,memory dimm
+2,19202400.0,120,maintenance
+2,19233000.0,91,other software
+2,19276980.0,315,undetermined
+2,19297140.0,12,other software
+2,19727100.0,646,memory dimm
+2,20785380.0,15,undetermined
+2,21621600.0,120,dst
+2,21628800.0,300,dst
+2,21983400.0,11,other software
+2,22095420.0,33,other software
+2,22111800.0,10,undetermined
+2,22152000.0,11,other software
+2,22154580.0,85,node board
+2,22177800.0,80,node board
+2,22237200.0,10,undetermined
+2,22341480.0,17,modify kernel parameters
+2,24565020.0,68,memory dimm
+2,24645600.0,120,maintenance
+2,24652800.0,350,dst
+2,27064800.0,210,maintenance
+2,27168360.0,12,other software
+2,27181980.0,38,memory dimm
+2,28581360.0,914,power outage
+2,30088800.0,50,maintenance
+2,30373080.0,92,power spike
+2,30373080.0,92,power spike
+2,30434400.0,965,power outage
+2,31213800.0,150,ups
+2,31341600.0,100,router board
+2,34927200.0,120,maintenance
+2,34934400.0,173,other software
+2,37535580.0,46,node board
+2,37963140.0,56,memory dimm
+2,37987500.0,15,other software
+2,38074200.0,55,memory dimm
+2,38103000.0,302,undetermined
+2,38768400.0,20,maintenance
+2,39459600.0,1440,security
+2,39894840.0,44,memory dimm
+2,40482540.0,71,maintenance
+2,40491120.0,79,other software
+2,40975200.0,715,upgrade/install os sftw
+2,41175000.0,25,other software
+2,41245920.0,50,other software
+2,41580000.0,180,upgrade/install os sftw
+2,42635100.0,77,memory dimm
+2,42789600.0,100,maintenance
+2,43934760.0,91,memory dimm
+2,45998700.0,4,scheduler software
+2,46581660.0,185,memory dimm
+2,52036920.0,73,memory dimm
+2,53676000.0,120,maintenance
+2,53683200.0,180,dst-upgrd/instl os sftw
+2,53694000.0,165,scheduler software
+2,54380040.0,50,other
+2,54481440.0,26,router board
+2,54817800.0,39,router board
+2,54901020.0,22,router board
+2,56095200.0,244,maintenance
+2,58604940.0,9,unresolvable
+2,59405760.0,10,unresolvable
+2,61105620.0,63,memory dimm
+2,61538400.0,124,maintenance
+2,62793600.0,11,other software
+2,67261020.0,161,node board
+2,68605440.0,10,memory dimm
+2,69250200.0,11,memory dimm
+2,69400800.0,120,maintenance
+2,69571800.0,110,gig e connection
+2,72581880.0,50,undetermined
+2,73350720.0,498,network
+2,74164260.0,40,fibre hba
+2,74241000.0,95,scheduler software
+2,75210600.0,211,fibre raid controller
+2,75386820.0,160,fibre raid controller
+2,76225140.0,28,memory dimm
+2,77458500.0,192,power outage
+2,78550320.0,279,ups
+2,79199340.0,73,power supply
+2,79682400.0,154,maintenance
+2,80280480.0,22,memory dimm
+2,81516600.0,120,ups
+2,82101600.0,120,maintenance
+2,84823860.0,27,memory dimm
+2,85047960.0,40,memory dimm
+2,85125600.0,125,maintenance
+2,85133100.0,295,dst-upgrd/instl os sftw
+2,85407180.0,142,chillers
+2,87195420.0,23,memory dimm
+2,87544800.0,216,maintenance
+2,89742900.0,110,node board
+2,89909880.0,132,mid-plane
+2,89917800.0,174,undetermined
+2,90570900.0,137,maintenance
+2,91270020.0,100,power supply
+2,91303500.0,279,undetermined
+2,92988000.0,120,maintenance
+2,95405700.0,145,maintenance
+2,95414400.0,68,network
+2,98431200.0,160,maintenance
+2,98484540.0,40,undetermined
+2,98585340.0,180,node board
+2,98760600.0,56,node board
+2,100480500.0,600,network
+2,100613520.0,17,undetermined
+2,103983300.0,12,undetermined
+2,108299220.0,117,power supply
+2,108421140.0,50,undetermined
+2,108626400.0,1546,maintenance
+2,110847780.0,117,memory dimm
+2,114156000.0,110,maintenance
+2,115350480.0,508,node board
+2,115923480.0,18,memory dimm
+2,116901900.0,184,node board
+2,118124400.0,110,memory dimm
+2,118307880.0,110,memory dimm
+2,121041900.0,17,power outage
+2,122018400.0,110,dst-scan for errors /scratch
+2,124110780.0,97,undetermined
+2,124437600.0,125,maintenance
+2,124528140.0,33,node board
+2,124723800.0,225,power outage
+2,124761360.0,21,undetermined
+2,126856800.0,120,maintenance
+2,127181940.0,163,node board
+2,127463760.0,57,memory module
+2,128884200.0,131,undetermined
+2,130003200.0,13,undetermined
+2,130110120.0,629,memory dimm
+2,130242720.0,127,power supply
+2,132307620.0,443,security
+2,132427680.0,293,memory dimm
+2,132480000.0,180,network
+2,132618600.0,79,node board
+2,132897600.0,822,network
+2,136555200.0,180,maintenance
+2,137743200.0,126,maintenance
+2,139249860.0,11,scheduler software
+2,139953600.0,45,memory dimm
+2,140162400.0,170,maintenance
+2,140536740.0,14,undetermined
+2,140970600.0,540,power outage
+2,141487020.0,27,undetermined
+2,141501780.0,161,power outage
+2,141548400.0,15,kernel software
+2,142581600.0,145,maintenance
+2,145221060.0,178,memory dimm
+2,145550160.0,89,undetermined
+2,146413800.0,49,node board
+2,146586900.0,142,power spike
+2,146771400.0,72,power outage
+2,150442200.0,155,dst-upgrd/instl os sftw
+2,150965700.0,31,memory dimm
+2,151466520.0,182,power supply
+2,154072740.0,239,memory dimm
+2,154100520.0,44,power supply
+2,155700900.0,125,power spike
+2,158475240.0,45,node board
+2,160055160.0,55,node board
+2,162967140.0,104,power supply
+2,163025760.0,210,node board
+2,164137800.0,68,node board
+2,164362140.0,31,undetermined
+2,166786320.0,46,undetermined
+2,167038200.0,70,power supply
+2,168263460.0,840,node board
+2,170394000.0,16,power outage
+2,171106200.0,75,node board
+2,172144800.0,403,memory dimm
+2,179489700.0,57,msc board
+2,180773400.0,35,node board
+2,181429440.0,29,undetermined
+2,182239380.0,164,memory dimm
+2,183031200.0,41,power supply
+2,185822400.0,25,other software
+2,188496540.0,71,power outage
+2,188811360.0,21,power spike
+2,192154860.0,54,undetermined
+3,3312420.0,443,security
+3,3484800.0,180,network
+3,3902400.0,822,network
+3,6591480.0,41,memory dimm
+3,7560000.0,180,maintenance
+3,8748000.0,126,maintenance
+3,9974100.0,12,os
+3,11167200.0,170,maintenance
+3,11541540.0,14,undetermined
+3,11975400.0,540,power outage
+3,13586400.0,145,maintenance
+3,21447000.0,155,dst-upgrd/instl os sftw
+3,32580960.0,32,undetermined
+3,43326000.0,273,undetermined
+3,58681560.0,118,undetermined
+3,62064660.0,10,scheduler software
+4,3312420.0,443,security
+4,3484800.0,180,network
+4,3902400.0,822,network
+4,7560000.0,180,maintenance
+4,8748000.0,126,maintenance
+4,9361140.0,35,scheduler software
+4,9974100.0,12,os
+4,10240200.0,60,undetermined
+4,11167200.0,170,maintenance
+4,11975400.0,540,power outage
+4,13586400.0,145,maintenance
+4,21447000.0,155,dst-upgrd/instl os sftw
+4,28291500.0,41,node board
+4,44626800.0,60,memory dimm
+4,49370100.0,24,memory dimm
+4,52461120.0,50,undetermined
+4,54290100.0,32,power supply
+4,57887340.0,59,undetermined
+4,60239400.0,22,undetermined
+5,913920.0,56,power supply
+5,1521360.0,228,network
+5,2100900.0,7,modify kernel parameters
+5,2724780.0,137,graphics accel hdwr
+5,3312420.0,443,security
+5,3484800.0,180,network
+5,3902400.0,822,network
+5,6328800.0,135,maintenance
+5,7560000.0,180,maintenance
+5,8748000.0,126,maintenance
+5,9472140.0,94,memory dimm
+5,11167200.0,170,maintenance
+5,11591220.0,74,other
+5,11975400.0,540,power outage
+5,12047820.0,8,power supply
+5,13586400.0,155,maintenance
+5,13694760.0,41,gig e switch
+5,14578200.0,313,other
+5,18166560.0,112,undetermined
+5,18176700.0,40,undetermined
+5,18424800.0,13,power supply
+5,19131540.0,41,undetermined
+5,19328880.0,85,undetermined
+5,21447000.0,174,dst-upgrd/instl os sftw
+5,21466320.0,116,undetermined
+5,21621600.0,155,fibre drive
+5,26929920.0,87,other software
+5,27648300.0,29,undetermined
+5,28290600.0,1366,undetermined
+5,28996140.0,57,node board
+5,29263620.0,15,undetermined
+5,30449640.0,90,memory dimm
+5,35028000.0,36,undetermined
+5,35041140.0,8,graphics accel hdwr
+5,35286360.0,63,power supply
+5,37364040.0,21,cpu
+5,40528500.0,62,undetermined
+5,40544640.0,40,undetermined
+5,43259040.0,38,memory dimm
+5,45523200.0,35,unresolvable
+5,46355340.0,26,graphics accel hdwr
+5,47057880.0,36,undetermined
+5,48330420.0,13,undetermined
+5,50052240.0,64,disk io
+5,50969820.0,65,undetermined
+5,52225200.0,270,power supply
+5,55250220.0,24,undetermined
+5,57762300.0,26,undetermined
+5,59389740.0,140,node board
+5,60701220.0,21,memory dimm
+5,62860500.0,10,graphics accel hdwr
+5,64419600.0,100,rm board
+5,64598280.0,158,undetermined
+5,64643520.0,14,undetermined
+5,64701840.0,14,memory dimm
+5,64990380.0,234,disk drive
+5,65019300.0,20,human error
+5,65207700.0,59,undetermined
+5,65242680.0,28,undetermined
+5,65318460.0,52,undetermined
+5,65348580.0,15,undetermined
+5,65501160.0,24,undetermined
+5,65690100.0,15,undetermined
+5,65731560.0,33,undetermined
+5,65796300.0,175,undetermined
+5,65825100.0,26,undetermined
+5,65865600.0,317,undetermined
+5,69723180.0,174,node board
+5,72897360.0,27,memory dimm
+5,73883280.0,238,power supply
+5,79432200.0,20,other software
+5,79696680.0,163,power supply
+5,80213580.0,126,graphics accel hdwr
+5,81846000.0,476,msc board
+5,81846000.0,476,msc board
+5,83386800.0,203,other
+5,83683800.0,81,graphics accel hdwr
+5,84960000.0,381,dst-upgrd/instl 3rdparty sftw
+5,85064880.0,12,graphics accel hdwr
+5,85389660.0,39,undetermined
+5,86805060.0,165,node board
+5,88771800.0,13,graphics accel hdwr
+5,89940600.0,210,network

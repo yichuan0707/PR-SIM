@@ -1,4 +1,3 @@
-from simulator.Configuration import Configuration
 from simulator.redundancy.base import Base
 
 
@@ -12,9 +11,6 @@ class LRC(Base):
         self._check()
 
         self.n = self.k + self.ll * self.m0 + self.m1
-
-        conf = Configuration()
-        self.chunk_size = conf.chunk_size
 
     def _check(self):
         if self.k < 0 or self.ll < 0 or self.m0 < 0 or self.m1 < 0:

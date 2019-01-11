@@ -127,59 +127,6 @@ class RandomDistributeEventHandler(EventHandler):
 
         self.cccccccccccccc = 0
 
-    # After end, init the parameters again for next iteration.
-    def _init(self):
-        self.availability_counts_for_recovery = \
-            self.conf.availability_counts_for_recovery
-
-        total_slices = len(self.durable_count)
-        for i in xrange(total_slices):
-            self.available_count[i] = self.n
-            self.durable_count[i] = self.n
-            self.latent_defect[i] = None
-            self.known_latent_defect[i] = None
-
-        self.unavailable_slice_count = 0
-        self.undurable_slice_count = 0
-
-        self.anomalous_available_count = 0
-
-        self.current_slice_degraded = 0
-        self.current_avail_slice_degraded = 0
-
-        self.recovery_bandwidth_cap = self.conf.recovery_bandwidth_gap
-        # instantaneous total recovery b/w, in MB/hr, not to exceed above cap
-        self.current_recovery_bandwidth = 0
-        # max instantaneous recovery b/w, in MB/hr
-        self.max_recovery_bandwidth = 0
-
-        # current counter of years to print histogram
-        self.snapshot_year = 1
-
-        self.max_bw = 0
-        self.bandwidth_list = OrderedDict()
-
-        self.total_latent_failures = 0
-        self.total_scrubs = 0
-        self.total_scrub_repairs = 0
-        self.total_disk_failures = 0
-        self.total_disk_repairs = 0
-        self.total_machine_failures = 0
-        self.total_machine_repairs = 0
-        self.total_perm_machine_failures = 0
-        self.total_short_temp_machine_failures = 0
-        self.total_long_temp_machine_failures = 0
-        self.total_machine_failures_due_to_rack_failures = 0
-        self.total_eager_machine_repairs = 0
-        self.total_eager_slice_repairs = 0
-        self.total_skipped_latent = 0
-        self.total_incomplete_recovery_attempts = 0
-
-        self.slices_degraded_list = []
-        self.slices_degraded_avail_list = []
-
-        self.cccccccccccccc = 0
-
     def _my_assert(self, expression):
         if not expression:
             raise Exception("My Assertion failed!")
@@ -189,6 +136,10 @@ class RandomDistributeEventHandler(EventHandler):
         if self.conf.bandwidth_efficient_scheme:
             if num_missing_blocks == 1:
                 return float(self.k)/2*self.conf.chunk_size
+        if self.conf.is_msr:
+            d = self.conf.d
+            if num_missing_blocks <= (self.n - d) and num_missing_blocks == 1:
+                return (float(d)/(d - self.k + 1))*self.conf.chunk_size
         return self.conf.chunk_size*(self.k+num_missing_blocks-1)
 
     def putBandwidthList(self, key, r):

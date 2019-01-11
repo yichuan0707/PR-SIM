@@ -1,0 +1,268 @@
+0,37208100.0,2515,power outage
+0,49312200.0,5,interconnect soft error
+0,49549200.0,3,scheduler software
+0,62841600.0,480,power outage
+1,35584500.0,3,undetermined
+1,58819140.0,3,memory dimm
+2,53254680.0,46,user code
+2,59952600.0,6,interconnect soft error
+4,34587960.0,7494,interconnect soft error
+4,40196340.0,71,system board
+4,40982820.0,112,undetermined
+4,43760160.0,4211,disk drive
+4,44026320.0,1,disk drive
+4,44039760.0,0,disk drive
+4,52106220.0,2,undetermined
+5,61746540.0,1,undetermined
+6,5720640.0,2,interconnect soft error
+7,40947180.0,0,undetermined
+7,51637920.0,0,user code
+7,51866400.0,25,memory dimm
+7,51878040.0,107,system board
+7,51950880.0,226,disk drive
+7,52052040.0,3,user code
+7,56634540.0,327,power supply
+8,39860700.0,7,interconnect soft error
+8,42581700.0,0,undetermined
+10,35550120.0,25,interconnect soft error
+14,60602580.0,0,interconnect interface
+15,45225540.0,0,undetermined
+17,40947540.0,0,undetermined
+18,51264960.0,12,undetermined
+18,61209960.0,0,parallel file system
+19,36162240.0,7,interconnect soft error
+19,48797700.0,1,memory dimm
+19,51103200.0,343,memory dimm
+23,6779340.0,40,memory dimm
+28,46325160.0,8,interconnect soft error
+30,40121820.0,35,interconnect soft error
+30,42844440.0,0,undetermined
+32,53357580.0,1451,network
+41,17085000.0,1180,power supply
+43,8590020.0,2,interconnect soft error
+57,38550060.0,49,interconnect soft error
+57,41273520.0,0,undetermined
+59,35202720.0,1,undetermined
+61,50992560.0,0,undetermined
+61,56728200.0,0,undetermined
+61,62112360.0,60,memory dimm
+62,59395200.0,7,memory dimm
+63,49451760.0,16,disk drive
+63,51439500.0,491,undetermined
+64,51454200.0,246,parallel file system
+65,43505280.0,2,console network device
+65,46227360.0,1,undetermined
+68,21031800.0,191,memory module
+68,57538680.0,231,interconnect interface
+68,60011220.0,132,parallel file system
+68,61749120.0,1,undetermined
+69,35969520.0,2900,memory dimm
+72,6394500.0,65,interconnect soft error
+72,40946400.0,0,undetermined
+72,51314400.0,6,interconnect soft error
+73,51454080.0,245,undetermined
+74,45694140.0,8641,undetermined
+74,50894280.0,60,memory dimm
+74,51267840.0,1,memory dimm
+74,51540600.0,8,memory dimm
+74,51811200.0,5,memory dimm
+74,52105800.0,23,memory dimm
+74,55587900.0,225,interconnect interface
+75,51615480.0,20,console network device
+76,8942820.0,2,interconnect soft error
+76,40010820.0,540,memory dimm
+76,40442580.0,32,network
+76,40464540.0,2,undetermined
+76,51523740.0,0,user code
+76,51609720.0,3,user code
+76,60346740.0,1,parallel file system
+79,57065100.0,119,undetermined
+81,35109420.0,1,undetermined
+81,51868560.0,0,undetermined
+82,53352960.0,4,memory dimm
+82,53791980.0,1015,undetermined
+82,53911020.0,150,undetermined
+82,53953620.0,171,undetermined
+82,55572780.0,17,disk drive
+83,9633600.0,1423,undetermined
+83,9720900.0,17220,heatsink bracket
+85,33993600.0,23,disk drive
+85,34189860.0,15449,disk drive
+87,61084200.0,0,memory dimm
+87,61113420.0,155,memory dimm
+87,61565460.0,0,undetermined
+88,35349060.0,3286,memory dimm
+88,35543040.0,62,undetermined
+88,36564720.0,168,undetermined
+88,40948920.0,0,undetermined
+88,41097180.0,580,interconnect soft error
+88,58273380.0,1,parallel file system
+88,61563420.0,55,undetermined
+90,39157620.0,274,undetermined
+90,39175680.0,2,undetermined
+90,41896380.0,0,undetermined
+91,41501700.0,15,memory dimm
+91,41781300.0,38,memory dimm
+91,49282860.0,5,memory dimm
+91,49469760.0,2,memory dimm
+91,49702500.0,1,memory dimm
+91,49783080.0,15,memory dimm
+92,35265960.0,303,interconnect soft error
+92,41501940.0,56,undetermined
+94,40268220.0,947,interconnect soft error
+94,43045560.0,1,undetermined
+95,33728400.0,35,interconnect interface
+95,56465340.0,8,memory dimm
+96,50418720.0,1,undetermined
+97,9023220.0,2,interconnect soft error
+98,43577520.0,11,undetermined
+98,43722000.0,418,memory dimm
+98,46467720.0,0,undetermined
+99,12060300.0,12985,power supply
+99,40962060.0,1,undetermined
+108,35347980.0,1,memory dimm
+108,40945440.0,0,undetermined
+108,46212480.0,0,undetermined
+113,60959340.0,0,interconnect interface
+116,40788300.0,351,undetermined
+118,35913000.0,3844,memory dimm
+118,36143760.0,2,undetermined
+118,62525640.0,120,system board
+119,40388700.0,172,undetermined
+119,43119600.0,6208,undetermined
+119,48783540.0,242,interconnect soft error
+119,54093180.0,20,undetermined
+122,11696220.0,20,riser card
+122,17085000.0,1175,power supply
+122,40879860.0,38,undetermined
+122,41151660.0,16,memory dimm
+124,51966180.0,1,undetermined
+127,50837460.0,1,undetermined
+129,7314120.0,10204,memory dimm
+130,19822200.0,210,memory module
+130,34079640.0,1,interconnect soft error
+132,49537680.0,2,undetermined
+134,52827300.0,11,user code
+136,56621820.0,47,interconnect soft error
+138,61557420.0,1,parallel file system
+139,35572200.0,236,interconnect soft error
+140,51627600.0,1,user code
+141,18005760.0,324,node board
+142,57501060.0,0,undetermined
+142,59386680.0,50,memory dimm
+142,61563900.0,0,interconnect interface
+144,51513240.0,36,memory dimm
+144,51982800.0,0,memory dimm
+144,52497000.0,0,memory dimm
+144,52827120.0,0,user code
+144,53496420.0,725,memory dimm
+146,62634240.0,1,parallel file system
+147,56337900.0,412,parallel file system
+147,58890960.0,0,interconnect interface
+147,59070600.0,507,interconnect interface
+148,34188600.0,10,interconnect soft error
+151,50558820.0,272,interconnect soft error
+152,56579940.0,6,interconnect soft error
+153,34098060.0,2,interconnect soft error
+153,38559540.0,61,network
+153,38563740.0,1,undetermined
+153,41284320.0,0,undetermined
+156,34080120.0,87,undetermined
+156,34088040.0,79,undetermined
+156,34094400.0,21,undetermined
+156,34096800.0,23,undetermined
+158,60596880.0,0,interconnect interface
+160,40133820.0,15,memory dimm
+160,40326180.0,33,network
+160,41157420.0,15,memory dimm
+160,43064940.0,309,memory dimm
+161,50155440.0,6,memory dimm
+161,52476120.0,9,memory dimm
+162,7564380.0,6073,temp probe
+162,59394480.0,9,parallel file system
+163,51811320.0,17,disk drive
+164,52751280.0,44,undetermined
+165,40864980.0,1,network
+167,54627960.0,5,interconnect soft error
+170,33812940.0,26,interconnect interface
+170,40720980.0,20,memory dimm
+172,53755980.0,18,interconnect soft error
+174,45119280.0,1828,undetermined
+174,56970600.0,0,undetermined
+174,59439120.0,92,cpu
+181,52676280.0,67,parallel file system
+182,40948560.0,0,undetermined
+183,53520060.0,20,memory dimm
+184,8142600.0,3375,system board
+184,19335300.0,945,system board
+184,40950480.0,1,undetermined
+185,50322240.0,2,undetermined
+185,51901260.0,11,undetermined
+186,52569840.0,0,parallel file system
+186,55725540.0,0,parallel file system
+187,52051980.0,7,user code
+187,52594500.0,0,undetermined
+187,55781220.0,1,parallel file system
+188,50144280.0,2,undetermined
+194,34718760.0,5316,interconnect soft error
+194,54360780.0,3,interconnect soft error
+195,39319320.0,7,memory dimm
+195,39749220.0,59,memory dimm
+195,50259000.0,2,parallel file system
+195,56857680.0,1,undetermined
+197,40874100.0,0,memory dimm
+197,40891740.0,161,memory dimm
+197,49166640.0,32,memory dimm
+197,49462260.0,138,undetermined
+197,49769040.0,16,memory dimm
+198,36667980.0,3243,memory dimm
+200,38584680.0,15,network
+200,38900820.0,9,memory dimm
+200,39171540.0,45,memory dimm
+200,39175500.0,1,undetermined
+200,41761500.0,25,memory dimm
+200,62000760.0,2526,parallel file system
+203,6438180.0,1456,ide cable
+203,14005380.0,2,interconnect soft error
+204,43577460.0,0,memory dimm
+204,43647000.0,198,memory dimm
+205,61127700.0,7,interconnect soft error
+209,36307800.0,198,interconnect soft error
+213,10773780.0,4322,interconnect soft error
+222,40879980.0,1,memory dimm
+224,38582340.0,9,network
+224,41302980.0,0,undetermined
+224,43861980.0,2507,memory dimm
+224,44096160.0,0,memory dimm
+225,41479800.0,0,system board
+226,29808000.0,50910,memory dimm
+226,34424580.0,1,interconnect soft error
+226,44012280.0,13,memory dimm
+226,63476880.0,16,memory dimm
+227,50793000.0,234,undetermined
+228,40555020.0,178,memory dimm
+228,40616820.0,363,memory dimm
+229,35201820.0,1,human error
+229,40557060.0,128,undetermined
+232,13436400.0,1235,system board
+232,42284340.0,10,interconnect soft error
+233,32697600.0,3200,system board
+233,33731100.0,1465,network
+235,40946820.0,0,undetermined
+238,40945860.0,0,undetermined
+239,8283660.0,1,interconnect soft error
+239,8354940.0,4,interconnect interface
+240,20783100.0,201595,disk drive
+240,37701960.0,370,undetermined
+242,41619660.0,463,interconnect soft error
+245,37699080.0,26,undetermined
+245,37752840.0,282,undetermined
+247,36666480.0,1379,interconnect soft error
+250,55915500.0,5,interconnect soft error
+253,50942640.0,0,user code
+253,54187860.0,337,interconnect soft error
+254,35437200.0,2,memory dimm
+255,35431320.0,2,memory dimm
+255,35583180.0,2,undetermined
+255,43150440.0,5695,upgrade/install os sftw
+578,32620500.0,4305,system board

@@ -52,42 +52,21 @@ class Test(object):
 
         chunks_per_machine = disks_per_machine*conf.chunks_per_disk
         chunks_per_rack = machines_per_rack*chunks_per_machine
-        # I think the rack can't be fulfilled, or Exception will be raised during distributeSlice.
+        # I think the rack can't be filled up, or Exception will be raised during distributeSlice.
         actual_storage_rack = chunks_per_rack*conf.chunk_size/1024.0*5.0/6.0  # in GB
         print "actual_storage_rack:", actual_storage_rack
         if actual_storage_rack <= 0:
             raise Exception("too many slices generated, overflow!")
 
-        # in GBs
-        total_storage_overheads = total_active_storage*1024*1024.0*n/k
-        print "total_storage_overheads:", total_storage_overheads
+        sclaing_flag = True
+        scaling_capacity = [1, 2]
+        scaling_times = len(scaling_capacity)
+        if scaling_times == 1:
+            scaling_flag = False
+            raise Exception("No scaling setting found.")
 
-        # we regard all disks in rack have the usage 75%.
-        racks = int(ceil(total_storage_overheads/actual_storage_rack))
-
-        # give the right rack count to Configuration
-        Configuration.rack_count = racks
-
-        # small number just for test!!
-        # Configuration.rack_count = 10
-        # conf.num_chunks_diff_racks = 1
-
-        # One rack is a failure domain, make sure data spreading across racks
-        # if racks <= conf.num_chunks_diff_racks*20/10:
-        #     raise Exception("Number of racks too small, adjust num chunks \
-        #                      diff racks")
-
-        total_disks = Configuration.rack_count * conf.machines_per_rack * \
-            conf.disks_per_machine
-
-        total_slices = int(ceil(total_storage_overheads * 1024.0 /
-                                (conf.chunk_size*n)))
-        Configuration.total_slices = total_slices
-        info_logger.info("total slices=" + str(total_slices) +
-                         " disk count=" + str(total_disks) +
-                         " total storage=" + str(total_storage_overheads) +
-                         "GB" + " disk size=" +
-                         str(conf.chunk_size*conf.chunks_per_disk/1024) + "GB")
+        scaling_timestamps = [conf.total_time/scaling_times*i for i in xrange(scaling_times)]
+        print scaling_timestamps
 
         un_available_count = 0
         un_durable_count = 0
@@ -100,28 +79,63 @@ class Test(object):
             res_file = "/root/PR-Sim/log/durability-" + ts
             info_logger.info("Durabilities output to: " + res_file)
 
+        last_racks = 0
         undur_unavail = []
-        iteration_count = int(sys.argv[1])
-        for i in xrange(iteration_count):
-            xml = XMLParser(1)
-            self.units = xml.readFile()
-            root = self.units[0]
-            if Machine.fail_fraction != 0:
-                rate = self.getMachineFailureGeneratorRate(root)
-            if rate != -1 and rate != 0:
-                total_machines = conf.machines_per_rack * \
-                    Configuration.rack_count
-                all_machine_failure_per_hour = total_machines/rate
-                permanent_machines_per_hour = Machine.fail_fraction * \
-                    total_machines/(24*30)
-                Machine.fail_fraction = permanent_machines_per_hour / \
-                    all_machine_failure_per_hour
+        racks_start_times = {}
+        for i, ts in enumerate(scaling_timestamps):
+            # in GBs
+            total_storage_overheads = scaling_capacity[i]*1024*1024.0*n/k
+            print "total_storage_overheads:", total_storage_overheads
 
-            layer_num = conf.returnLayerNum()
-            for i in xrange(1, layer_num + 1):
-                # Yes, all disks are instance of DiskWithScrubbing.
+            # we regard all disks in rack have the usage 75%.
+            racks = int(ceil(total_storage_overheads/actual_storage_rack))
+            racks_start_times[ts] = racks - last_racks
+
+            # give the right rack count to Configuration
+            Configuration.rack_count = racks
+            print "rack count:", Configuration.rack_count
+
+            total_disks = Configuration.rack_count * conf.machines_per_rack * \
+                conf.disks_per_machine
+
+            total_slices = int(ceil(total_storage_overheads * 1024.0 /
+                                    (conf.chunk_size*n)))
+            Configuration.total_slices = total_slices
+            info_logger.info("total slices=" + str(total_slices) +
+                             " disk count=" + str(total_disks) +
+                             " total storage=" + str(total_storage_overheads) +
+                             "GB" + " disk size=" +
+                             str(conf.chunk_size*conf.chunks_per_disk/1024) + "GB")
+
+            iteration_count = int(sys.argv[1])
+            for i in xrange(iteration_count):
+                xml = XMLParser(1)
+                self.units = xml.readFile()
+                root = self.units[0]
+                if Machine.fail_fraction != 0:
+                    rate = self.getMachineFailureGeneratorRate(root)
+                if rate != -1 and rate != 0:
+                    total_machines = conf.machines_per_rack * \
+                        Configuration.rack_count
+                    all_machine_failure_per_hour = total_machines/rate
+                    permanent_machines_per_hour = Machine.fail_fraction * \
+                        total_machines/(24*30)
+                    Machine.fail_fraction = permanent_machines_per_hour / \
+                        all_machine_failure_per_hour
+
                 events = EventQueue()
-                root.generateEvents(events, 0, conf.total_time, True)
+                total_racks = root.getChildren()[0].getChildren()
+                for j, rack in enumerate(total_racks):
+                    period = conf.total_time/scaling_times
+                    start_times = racks_start_times.keys()
+                    start_times.sort()
+                    racks_num = [racks_start_times[item] for item in start_times]
+                    rack_id_thresholds = [racks_num[0]] + [racks_num[i]+racks_num[i+1] for i in xrange(len(racks_num)-1)]
+
+                    for x, rack_id in enumerate(rack_id_thresholds):
+                        if j < rack_id:
+                            rack.generateEvents(events, ts - x*period, ts-(x-1)*period, True)
+
 
                 if True:  # conf.event_file is not None:
                     events.printAll(conf.event_file,
@@ -132,16 +146,8 @@ class Test(object):
                 handler.start(root, total_slices, total_disks)
                 error_logger.error("Starting simulation ")
 
-                    # print slices locations to file for debugging.
-                    # with open("locations", "w") as fp:
-                    #     for i, s in enumerate(handler.slice_locations):
-                    #         msg = str(i)
-                    #         for disk in s:
-                    #             msg += "  " + disk.getFullName()
-                    #         msg += "\n"
-                    #         fp.write(msg)
 
-                    # Event handling
+                # Event handling
                 e = events.removeFirst()
                 while e is not None:
                     handler.handleEvent(e, events)
@@ -154,18 +160,20 @@ class Test(object):
                 un_available_count += Result.unavailable_count
                 un_durable_count += Result.undurable_count
 
-                # Record undurability and unavailability in csv files.
-                undurability = (float(handler.undurable_slice_count) /
-                                len(handler.available_count)) * 100
-                unavail_time = 0.0
-                unavailables = handler.unavailable_durations.keys()
-                print "number of unavailable slices:", len(unavailables)
-                for item in unavailables:
-                    for ts_duration in handler.unavailable_durations[item]:
-                        unavail_time += ts_duration[1] - ts_duration[0]
-                unavailability = (unavail_time/(conf.total_slices*conf.total_time)) * 100
-                print "unavailability:", unavailability
-                undur_unavail.append([round(undurability, 5), round(unavailability, 5)])
+            # Record undurability and unavailability in csv files.
+            undurability = (float(handler.undurable_slice_count) /
+                            len(handler.available_count)) * 100
+            unavail_time = 0.0
+            unavailables = handler.unavailable_durations.keys()
+            print "number of unavailable slices:", len(unavailables)
+            for item in unavailables:
+                for ts_duration in handler.unavailable_durations[item]:
+                    unavail_time += ts_duration[1] - ts_duration[0]
+            unavailability = (unavail_time/(conf.total_slices*conf.total_time)) * 100
+            print "unavailability:", unavailability
+            undur_unavail.append([round(undurability, 5), round(unavailability, 5)])
+
+            last_racks = racks
 
         if True:  # conf.event_file is None:
             info_logger.info("avg unavailable = %.5f" %

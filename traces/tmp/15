@@ -1,0 +1,54 @@
+0,2503500.0,17,undetermined
+0,2581500.0,15,undetermined
+0,2620260.0,9,undetermined
+0,2846700.0,10,memory dimm
+0,2994300.0,15,memory dimm
+0,3190500.0,14,memory dimm
+0,3282600.0,15,memory dimm
+0,3716400.0,10,memory dimm
+0,3805980.0,191,memory dimm
+0,3927900.0,75,memory dimm
+0,4024800.0,20,memory dimm
+0,4161600.0,30,memory dimm
+0,5450940.0,351,system board
+0,5814900.0,9,cpu
+0,6069600.0,117,memory dimm
+0,6107400.0,50,cpu
+0,6210300.0,10,cpu
+0,6453600.0,14,memory dimm
+0,6574740.0,361,cpu
+0,6665100.0,383,cpu
+0,6801600.0,17,memory dimm
+0,6888600.0,2316,memory dimm
+0,7066200.0,44,memory dimm
+0,7227240.0,56,undetermined
+0,7399200.0,125,memory dimm
+0,7576200.0,85,cpu
+0,7667100.0,45,memory dimm
+0,7901400.0,175,memory dimm
+0,8082780.0,7,undetermined
+0,9120000.0,55,memory dimm
+0,9142200.0,31,memory dimm
+0,9183600.0,30,memory dimm
+0,9711000.0,30,unresolvable
+0,9853800.0,20,unresolvable
+0,9869940.0,231,memory dimm
+0,9975600.0,135,human error
+0,10089900.0,35,cpu
+0,10278000.0,205,undetermined
+0,11552400.0,285,human error
+0,12276420.0,327,power spike
+0,14055300.0,5,other software
+0,14489100.0,28,cpu
+0,15016200.0,30,unresolvable
+0,17441520.0,13,scheduler software
+0,19326600.0,35,memory dimm
+0,20019600.0,58,undetermined
+0,20295000.0,1090,memory dimm
+0,20373000.0,24,undetermined
+0,21588600.0,15,scheduler software
+0,21829800.0,143,memory dimm
+0,22477380.0,13,node board
+0,23996280.0,14,scheduler software
+0,24596040.0,16,node board
+0,25809600.0,16,undetermined

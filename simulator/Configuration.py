@@ -2,6 +2,7 @@ import ConfigParser
 import os
 from random import random
 from simulator.utils.Log import info_logger
+from simulator.redundancy.RedundancyHandler import getRedunHandler
 
 BASE_PATH = r"/root/PR-Sim/"
 CONF_PATH = BASE_PATH + "conf"
@@ -68,6 +69,7 @@ class Configuration(object):
         self.redundancies = d["redundancies"]
         self.redundancies.strip()
         redun_list = self.redundancies.split(":")
+        self.is_msr = False
         if len(redun_list) != self.layer_num:
             raise Exception("Redundancy schemes not match system tiers!")
 
@@ -87,6 +89,28 @@ class Configuration(object):
         if self.layer_num == 1 and not self.heterogeneous_redundancy:
             self.n = self.redundancies_dict.values()[0][0][1]
             self.k = self.redundancies_dict.values()[0][0][2]
+            params = {'k':self.k}
+            redun_name = self.redundancies_dict.values()[0][0][0]
+            if redun_name.upper() == "MSR" or redun_name.upper() == "MBR":
+                self.d = self.redundancies_dict.values()[0][0][3]
+                self.is_msr = True
+                params['d'] = self.d
+                params['m'] = self.n - self.k
+            elif redun_name.upper() == "XORBAS":
+                self.l = self.redundancies_dict.values()[0][0][3]
+                params['l'] = self.l
+                params['m1'] = self.n - self.l
+            elif redun_name.upper() == "LRC":
+                self.l = self.redundancies_dict.values()[0][0][3]
+                self.m0 = self.redundancies_dict.values()[0][0][4]
+                params['l'] = self.l
+                params['m0'] = self.m0
+                params['m1'] = self.n - self.l * self.m0
+            elif redun_name.upper() == "RS":
+                params['m'] = self.n - self.k
+            else:
+                raise Exception("Unsupport Redundancy Scheme!")
+            self.redun_handler = getRedunHandler(redun_name, params)
 
         # check recovery settings.
         if self.lazy_recovery:
@@ -222,4 +246,5 @@ class Configuration(object):
 
 if __name__ == "__main__":
     conf = Configuration()
-    print conf.printAll()
+    # print conf.printAll()
+    print conf.redun_handler.systemStorageCost()
